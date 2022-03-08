@@ -32,7 +32,7 @@
                         <svg class="m-auto hover:animate-pulse" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2h4a2 2 0 01-2-2z"></path>
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
                         <p class=" text-xs md:text-sm md:font-semibold md:ml-2 ">
@@ -84,7 +84,7 @@
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h28s-3-2-3-9"></path>
+                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                         </svg>
                         <p class=" text-xs md:text-sm md:font-semibold md:ml-2">Notifications</p>
@@ -93,10 +93,10 @@
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="#" class="flex flex-col md:flex-row">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                            <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                         <p class=" text-xs md:text-sm md:font-semibold md:ml-2">Profile</p>
                     </a>
@@ -107,7 +107,7 @@
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h26c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                             </path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
@@ -136,13 +136,13 @@
     </nav>
 
     <main
-        class="overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+        class="overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row max-w-screen pt-18 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
 
         <section
             class="relative w-11/12 sm:w-4/5 md:w-11/12 h-full bg-white rounded-lg border-1  drop-shadow-lg  mx-auto">
             <div class="text-white rounded-t-lg p-5 pb-3 flex flex-row justify-start bg-light-blue
             ">
-                <img src="img/temp.png" alt="profile" class="rounded-full w-20 h-20 ">
+                <img src="img/temp.png" alt="profile" class="rounded-full w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  ">
                 <h2 class=" my-auto ml-3 text-xl font-bold">Good morning, Kate. <cite
                         class="text-sm font-medium"><br>Are
                         you ready
@@ -181,7 +181,7 @@
                 <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
                     stroke-linejoin="round">
-                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h28s-3-2-3-9"></path>
+                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                 </svg>
             </div>
@@ -229,8 +229,40 @@
             </div>
 
             <div>
-                <h2></h2>
-                <img src="img/stat1.svg" alt="">
+                <h2 class="font-semibold text-xs text-text-mute mt-6 border-b-1">Assignments</h2>
+                <img class="h-60 m-auto" src="img/stat1.svg" alt="">
+            </div>
+
+            <div class="flex flex-row justify-between">
+
+                <nav class=" relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                    <a href="#"
+                        class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500  hover:text-white hover:bg-light-blue">
+                        <span class="sr-only">Previous</span>
+                        <!-- Heroicon name: solid/chevron-left -->
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </nav>
+
+                <nav>
+
+                    <a href="#"
+                        class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:text-white hover:bg-light-blue">
+                        <span class="sr-only">Next</span>
+                        <!-- Heroicon name: solid/chevron-right -->
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </nav>
             </div>
 
             <div class="h-8">
@@ -407,7 +439,7 @@
         <a class="grid justify-items-center py-2" href="index.html">
             <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2h4a2 2 0 01-2-2z"></path>
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
         </a>
@@ -433,7 +465,7 @@
                 <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
-                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h28s-3-2-3-9"></path>
+                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                 </svg>
 
