@@ -861,26 +861,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
-.h-30 {
-  height: 7.5rem;
-}
-
 .h-4 {
   height: 1rem;
 }
 
-.h-52 {
-  height: 13rem;
-}
-
 .max-h-20 {
   max-height: 5rem;
-}
-
-.max-h-fit {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
 }
 
 .min-h-screen {
@@ -931,14 +917,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 11rem;
 }
 
-.w-30 {
-  width: 7.5rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -953,10 +931,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-28 {
   width: 7rem;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .min-w-fit {
@@ -1425,11 +1399,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -1816,14 +1785,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-dark-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 113 241 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-200:hover {
@@ -1879,26 +1848,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 380px) {
-  .xs\:h-30 {
-    height: 7.5rem;
-  }
-
   .xs\:w-1\/2 {
     width: 50%;
-  }
-
-  .xs\:w-30 {
-    width: 7.5rem;
-  }
-
-  .xs\:w-full {
-    width: 100%;
-  }
-
-  .xs\:w-fit {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
 }
 
@@ -1915,10 +1866,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 0.25rem;
   }
 
-  .sm\:h-30 {
-    height: 7.5rem;
-  }
-
   .sm\:w-full {
     width: 100%;
   }
@@ -1929,10 +1876,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-4\/5 {
     width: 80%;
-  }
-
-  .sm\:w-30 {
-    width: 7.5rem;
   }
 
   .sm\:flex-row {
@@ -1991,10 +1934,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-11\/12 {
     width: 91.666667%;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:w-30 {
