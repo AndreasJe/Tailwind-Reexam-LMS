@@ -19,5 +19,6 @@
 <ul>
     <li>0.1: Building the responsive navigation with Tailwind</li>
     <li>0.2: Styling and incorporating simple layouts for content. Numerous tests performed to get comfortable in the system</li>
-    <li>0.3</li>
+    <li>0.3: More content templates created and implemented - Styling responsive properties for mobile, tablet and desktop on the fly</li>
+    <li>0.5: Creating more temporary pages, rearranged other content and tweaked the responsive properties</li>
 </ul>
