@@ -10,7 +10,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-Poppins overflow-hidden bg-bg-color">
+<body class=" font-Poppins overflow-hidden bg-bg-color">
 
     <nav class="bg-transparent z-50 sticky top-0 ">
         <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
@@ -118,7 +118,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -138,10 +138,12 @@
     </nav>
 
     <main
-        class=" p-5 overflow-scroll h-full min-h-screen max-w-screen pt-6 flex flex-col xl:flex-row lg:w-183 md:ml-125 lg:ml-115 ">
+        class=" max-w-7xl  scrollbar-hide p-5 overflow-scroll h-full flex-col min-h-screen  pt-6 flex pb-32 xl:flex-wrap lg:w-183 md:ml-125 lg:ml-115  xl:flex-row">
 
-        <section class="w-full max-w-2xl relative h-fit mx-auto lg:mx-5  bg-white rounded-lg border-1  drop-shadow-lg ">
+        <section
+            class=" w-11/12  sm:w-full  max-w-2xl relative h-fit lg:mt-5  bg-white rounded-lg border-1  drop-shadow-lg ">
             <div class="bg-white block rounded-lg ">
+                <h1 class="text-xl font-medium text-white absolute top-4 left-4  z-50">Your Profile:</h1>
                 <div class=" mx-auto">
                     <div class="w-full">
                         <div class="relative w-full bg-blue-600 h-48 rounded-t-lg"></div>
@@ -176,18 +178,18 @@
                         <div class="pt-8 flex gap-4">
                             <div class="flex flex-col">
                                 <div class="mb-1 text-sm underline h-6 w-25 basis-25">
-                                    <p>Web Development</p>
+                                    <a>Web Development</a>
                                 </div>
                                 <div class="mb-1 text-sm underline h-6 w-25 basis-25">
-                                    <p>User Experience</p>
+                                    <a>User Experience</a>
                                 </div>
                             </div>
                             <div class="flex flex-col">
                                 <div class="mb-1 text-sm underline h-6 w-25 basis-25">
-                                    <p>Database</p>
+                                    <a>Database</a>
                                 </div>
                                 <div class="mb-1 text-sm underline h-6 w-25 basis-25">
-                                    <p>Dev Enviroments</p>
+                                    <a>Dev Enviroments</a>
                                 </div>
                             </div>
                         </div>
@@ -221,9 +223,34 @@
         </section>
 
         <section
-            class="max-w-2xl relative h-fit mx-auto mt-5 lg:mx-5  w-full xl:mt-0 xl:m-5 xl:max-w-xs   bg-white rounded-lg border-1 drop-shadow-lg  ">
+            class="max-w-2xl relative h-fit p-5 xl:m-5 mt-5  w-11/12  sm:w-full   xl:max-w-xs   bg-white rounded-lg border-1 drop-shadow-lg  ">
+            <div class="flex flex-row justify-between  mb-2">
+                <h2 class="text-xl font-medium">Study group:</h2>
 
-            <h1 class="h-10 p-3 text-xl font-medium rounded-t-lg">Your group:</h1>
+                <svg class="text-dark-blue h-10 -mr-1" fill="currentColor" w="24px" h="24px"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.6172,18.3355a.7372.7372,0,1,1,.737-.7373A.7381.7381,0,0,1,21.6172,18.3355Zm0-1.1561a.419.419,0,1,0,.4189.4188A.4192.4192,0,0,0,21.6172,17.1794Z" />
+                    <path
+                        d="M19.3694,18.3355a.7372.7372,0,1,1,.737-.7373A.7381.7381,0,0,1,19.3694,18.3355Zm0-1.1561a.419.419,0,1,0,.4189.4188A.4192.4192,0,0,0,19.3694,17.1794Z" />
+                    <path
+                        d="M17.1216,18.3355a.7372.7372,0,1,1,.737-.7373A.7382.7382,0,0,1,17.1216,18.3355Zm0-1.1561a.419.419,0,1,0,.4189.4188A.4194.4194,0,0,0,17.1216,17.1794Z" />
+                    <path
+                        d="M14.8737,18.3355a.7372.7372,0,1,1,.7371-.7373A.7381.7381,0,0,1,14.8737,18.3355Zm0-1.1561a.419.419,0,1,0,.419.4188A.4193.4193,0,0,0,14.8737,17.1794Z" />
+                    <path
+                        d="M12.6259,18.3355a.7372.7372,0,1,1,.737-.7373A.7381.7381,0,0,1,12.6259,18.3355Zm0-1.1561a.419.419,0,1,0,.4188.4188A.4193.4193,0,0,0,12.6259,17.1794Z" />
+                    <path
+                        d="M4.0368,9.24A2.4336,2.4336,0,0,0,6.5156,6.86a2.4336,2.4336,0,0,0-2.4788-2.38A2.4336,2.4336,0,0,0,1.558,6.86,2.4336,2.4336,0,0,0,4.0368,9.24Zm0-4.2822A1.9456,1.9456,0,0,1,6.0185,6.86,1.9456,1.9456,0,0,1,4.0368,8.7628,1.9456,1.9456,0,0,1,2.0551,6.86,1.9456,1.9456,0,0,1,4.0368,4.9579Z" />
+                    <path
+                        d="M16.52,9.24a2.4336,2.4336,0,0,0,2.4788-2.38,2.4809,2.4809,0,0,0-4.9576,0A2.4336,2.4336,0,0,0,16.52,9.24Zm0-4.2822A1.9456,1.9456,0,0,1,18.5018,6.86a1.9833,1.9833,0,0,1-3.9633,0A1.9455,1.9455,0,0,1,16.52,4.9579Z" />
+                    <path
+                        d="M10.253,11.4871a2.4336,2.4336,0,0,0,2.4788-2.38,2.4809,2.4809,0,0,0-4.9576,0A2.4336,2.4336,0,0,0,10.253,11.4871Zm0-4.2822A1.904,1.904,0,1,1,8.2713,9.1074,1.9457,1.9457,0,0,1,10.253,7.2049Z" />
+                    <path
+                        d="M20.6133,15.6773l0-3.3112-.012-.0929-.0088-.03a3.1348,3.1348,0,0,0-3.1278-2.692H15.9317a3.1314,3.1314,0,0,0-3.1254,2.6836,3.2,3.2,0,0,0-1.6092-.4365H9.6646a3.2,3.2,0,0,0-1.5617.41,3.1361,3.1361,0,0,0-3.122-2.6573H3.4484A3.1307,3.1307,0,0,0,.3193,12.2572l-.02.0236v3.7228a.283.283,0,0,0,.2882.2769h5.928v1.97a.283.283,0,0,0,.2882.2768h3.7387v.9918H23.7006v-3.842ZM13.2787,12.44l.0123-.0721a2.6241,2.6241,0,0,1,2.6407-2.34h1.5325a2.6236,2.6236,0,0,1,2.6406,2.3338l.0107,3.3153h-5.77l0-1.0642-.012-.0929-.0087-.03a2.9862,2.9862,0,0,0-1.0462-1.9216Zm-6.7432,2.064-.02.0236v1.2754H.7965L.7954,12.44l.0123-.0721a2.6241,2.6241,0,0,1,2.6407-2.34H4.9809A2.6236,2.6236,0,0,1,7.6215,12.362l0,.1746A2.9873,2.9873,0,0,0,6.5355,14.5042ZM7.0127,18.05l-.0011-3.3631.0122-.0721a2.6243,2.6243,0,0,1,2.6408-2.34h1.5325a2.6237,2.6237,0,0,1,2.6406,2.3339l.0034,1.0682H10.5425V18.05Zm16.2107.9918H11.02V16.1546H23.2234Z" />
+                </svg>
+            </div>
+
+
             <div class="flex justify-center flex-col md:flex-row xl:flex-col rounded-t-lg">
                 <div class="w-11/12 xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1 ">
                     <img class="mx-auto object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
@@ -250,14 +277,91 @@
 
             </div>
 
+            <div class="h-10"></div>
+
         </section>
 
 
         <section
-            class="mx-auto my-5 lg:mx-5 max-w-2xl w-full xl:mt-0 xl:m-5 xl:max-w-xs relative h-fit bg-white rounded-lg border-1 drop-shadow-lg ">
+            class="w-11/12 order-2 p-5 sm:w-full  xl:m-5 mt-5  max-w-2xl mb-5 xl:max-w-xs relative h-fit bg-white rounded-lg border-1 drop-shadow-lg">
 
-            <h1 class="h-10 p-3 text-xl w-full font-medium rounded-t-lg">Upcoming Assignments:</h1>
-            <div class="flex justify-center flex-col sm:flex-row xl:flex-col rounded-t-lg">
+
+            <div class="flex flex-row justify-between  mb-2">
+                <h2 class="text-xl font-medium">Grades </h2>
+
+                <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                    <path
+                        d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.178.178 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.178.178 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.178.178 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.178.178 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.178.178 0 0 0 .134-.098L7.84 4.1z">
+                    </path>
+                    <path
+                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1h3z">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="my-2">
+                <h4 class="font-semibold text-xs text-text-mute mt-2 border-b-1">1. Semester</h4>
+                <ul>
+                    <li class="flex flex-row justify-between">
+                        <p class="text-sm font-normal">Web Development</p>
+                        <p class="text-base font-semibold w-5 text-center">12</p>
+                    </li>
+                    <li class="flex flex-row justify-between">
+                        <p class="text-sm font-normal">User Experience</p>
+                        <p class="text-base font-semibold w-5 text-center">00</p>
+                    </li>
+                    <li class="flex flex-row justify-between">
+                        <p class="text-sm font-normal">Database</p>
+                        <p class="text-base font-semibold w-5 text-center">12</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-2">
+                <h4 class="font-semibold text-xs text-text-mute mt-2 border-b-1">2. Semester</h4>
+                <ul>
+                    <li class="flex flex-row justify-between">
+                        <p class="text-sm font-normal">Django Python</p>
+                        <p class="text-base font-semibold w-5 text-center">12</p>
+                    </li>
+                    <li class="flex flex-row justify-between">
+                        <p class="text-sm font-normal">React Native</p>
+                        <p class="text-base font-semibold w-5 text-center">12</p>
+                    </li>
+                    <li class="flex flex-row justify-between">
+                        <p class="text-sm font-normal">Web Developments</p>
+                        <p class="text-base font-semibold w-5 text-center">12</p>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <section
+            class=" w-11/12 p-5 sm:w-full  xl:my-5 mt-5 max-w-2xl relative h-fit bg-white rounded-lg border-1 drop-shadow-lg ">
+            <div class="flex flex-row justify-between  mb-20">
+                <h2 class="text-xl font-medium">Upcoming Assignments:</h2>
+
+                <svg class=" -mr-1 h-6 text-dark-blue" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" w="24px" h="24px" viewBox="0 0 1000 1000"
+                    fill="currentColor" enable-background="new 0 0 1000 1000" xml:space="preserve">
+
+                    <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                            <path
+                                d="M392.3,4845.7c-133.6-61.3-192.1-122.5-250.6-261.7c-36.2-89.1-41.8-601.4-41.8-4474c0-3872.7,5.6-4384.9,41.8-4474c58.5-139.2,116.9-200.5,250.6-261.7c105.8-50.1,247.8-52.9,2692.2-52.9c1912.7,0,2600.3,8.3,2658.8,33.4c41.8,16.7,395.4,345.2,782.3,729.5l701.6,698.8v1208.3v1211.1l-128.1-172.6c-69.6-94.7-169.8-197.7-222.7-228.3l-94.7-61.3v-879.8v-882.6L6174.9-3629l-604.2-604.2l-2505.7,5.6l-2505.7,8.4V110v4329.3h3104.3h3104.3l8.3-1475.6l5.6-1472.8l222.7,303.5l222.7,303.5v1191.6c0,1010.6-5.6,1208.3-41.8,1294.6c-58.5,139.2-116.9,200.4-250.6,261.7c-105.8,50.1-264.5,52.9-3271.3,52.9C656.8,4898.6,498.1,4895.8,392.3,4845.7z" />
+                            <path
+                                d="M8892.2,3974.3c-22.3-19.5-729.4-971.7-1567.4-2118.7L5801.8-224.1L5709.9-831c-50.1-331.3-89.1-606.9-83.5-612.5c2.8-5.6,270.1,94.6,593,222.7l584.7,231.1l1548,2113.1C9204,2284.4,9900,3261.6,9900,3289.4C9900,3620.7,9114.9,4152.5,8892.2,3974.3z M9262.4,3445.3c64.1-50.1,122.5-103,128.1-119.7c5.6-13.9-634.8-904.8-1419.9-1976.7C6667.7-430.1,6534-605.5,6419.9-661.2c-69.6-33.4-153.1-66.8-189.3-77.9c-64-19.5-64-16.7-44.6,117c11.1,72.4,30.6,161.5,41.8,197.7c30.6,77.9,2867.6,3959,2895.5,3959C9134.4,3534.4,9198.4,3492.7,9262.4,3445.3z" />
+                            <path d="M1213.6,2225.9v-222.7h2338.6h2338.6v222.7v222.7H3552.3H1213.6V2225.9z" />
+                            <path d="M1213.6,889.5V666.8h2338.6h2338.6v222.7v222.7H3552.3H1213.6V889.5z" />
+                            <path d="M1213.6-446.8v-222.7h1893.2H5000v222.7v222.7H3106.8H1213.6V-446.8z" />
+                            <path d="M1213.6-1783.2v-222.7h1893.2H5000v222.7v222.7H3106.8H1213.6V-1783.2z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="flex justify-center flex-col sm:flex-row rounded-t-lg">
                 <div class="min-w-fit w-full p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
                     <h4
                         class="font-semibold text-base h-full w-full p-1 bg-dark-blue text-white rounded-md border-t-1 ">
@@ -271,7 +375,7 @@
                     <a class="text-sm font-semibold flex justify-end" href="#">Hand in &#62;
                     </a>
                 </div>
-                <div class="min-w-fit w-full  p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
+                <div class="min-w-fit w-full p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
                     <h4
                         class="font-semibold text-base h-full w-full p-1 bg-dark-blue text-white rounded-t-md border-t-1 ">
                         UX:</h4>
@@ -287,9 +391,9 @@
             </div>
 
 
-            <div class="flex justify-center  flex-col sm:flex-row xl:flex-col rounded-t-lg">
+            <div class="flex justify-center  flex-col sm:flex-row rounded-t-lg">
 
-                <div class="min-w-fit w-full  p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
+                <div class="min-w-fit w-full p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
                     <h4
                         class="font-semibold text-base h-full w-full p-1 bg-dark-blue text-white rounded-md border-t-1  ">
                         Web
@@ -302,12 +406,12 @@
                     <a class="text-sm font-semibold flex justify-end" href="#">Hand in &#62;
                     </a>
                 </div>
-                <div class="min-w-fit w-full  p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
+                <div class="min-w-fit w-full p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
                     <h4
                         class="font-semibold text-base h-full w-full p-1 bg-dark-blue text-white rounded-md border-t-1 ">
-                        Database:</h4>
+                        UX:</h4>
                     <h5 class="text-sm w-full break-words">Mandatory Two: <br> <em class="break-words"> Report on
-                            "Something really boring"</em> </h5>
+                            "Taking things out of context"</em> </h5>
                     <p class="text-sm ">
                         <bold class="font-semibold">Due:</bold> <em class="underline">March 30, 12:00</em>
                     </p>
@@ -318,7 +422,59 @@
             </div>
 
         </section>
+
     </main>
+
+    <footer
+        class="grid grid-cols-5 gap-8 bg-dark-blue text-white w-screen fixed bottom-0 max-h-20 h-fit md:hidden px-4 border-t-6 border-light-blue">
+        <a class="grid justify-items-center py-2" href="index.html">
+            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <a href="courses.html" class="grid justify-items-center py-2">
+            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+        </a>
+        <a href="schedule.html" class="grid justify-items-center py-2">
+            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+        </a>
+
+        <a href="notifications.html" class="grid justify-items-center py-2">
+            <span class="relative inline-block m-auto">
+                <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+                </svg>
+
+                <span
+                    class="animate-bounce absolute -top-3 -right-3 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-notif-color rounded-full drop-shadow-md border-2">13</span>
+            </span>
+        </a>
+
+
+        <a href="profile.html" class="grid justify-items-center py-2">
+            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </a>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 

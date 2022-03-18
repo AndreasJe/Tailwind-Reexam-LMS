@@ -5,7 +5,9 @@
 <ul>
     <li>Node.js</li>
     <li>Tailwind CSS</li>
+    <li><a href="https://www.npmjs.com/package/tailwind-scrollbar-hide">Tailwind Scrollbar Hide Plugin</a></li>
     <li>LiveServer</li>
+    
 </ul>
 
 <h2>How to run:</h2>

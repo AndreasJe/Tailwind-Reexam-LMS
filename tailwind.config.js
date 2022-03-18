@@ -4,11 +4,12 @@ module.exports = {
   darkMode: "media", // or 'class'
   theme: {
     screens: {
-      xs: "380px",
+      xs: "410px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
+      xxl: "1480px",
       "2xl": "1536px",
     },
     colors: ({ colors }) => ({
@@ -42,6 +43,7 @@ module.exports = {
       "light-blue": "#3686ff",
       "dark-blue": "#1d71f1",
       "accent-yellow": "#ffa95a",
+      "accent-red": "#ed6759",
       "accent-blue": "#3686ff",
       "bg-color": "#e5e5e5",
       "notif-color": "#5e9eff",
@@ -403,20 +405,90 @@ module.exports = {
       Poppins: ['"Poppins"'],
     },
     fontSize: {
-      xs: ["0.55rem", { lineHeight: "1.3rem" }],
-      sm: ["0.75rem", { lineHeight: "1.5rem" }],
-      base: ["0.8rem", { lineHeight: "1.6rem" }],
-      base2: ["0.9rem", { lineHeight: "1.8rem" }],
-      lg: ["1.125rem", { lineHeight: "1.75rem" }],
-      xl: ["1.25rem", { lineHeight: "1.75rem" }],
-      "2xl": ["1.5rem", { lineHeight: "2rem" }],
-      "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
-      "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
-      "5xl": ["3rem", { lineHeight: "1" }],
-      "6xl": ["3.75rem", { lineHeight: "1" }],
-      "7xl": ["4.5rem", { lineHeight: "1" }],
-      "8xl": ["6rem", { lineHeight: "1" }],
-      "9xl": ["8rem", { lineHeight: "1" }],
+      xs: [
+        "0.55rem",
+        {
+          lineHeight: "1.3rem",
+        },
+      ],
+      sm: [
+        "0.75rem",
+        {
+          lineHeight: "1.5rem",
+        },
+      ],
+      base: [
+        "0.8rem",
+        {
+          lineHeight: "1.6rem",
+        },
+      ],
+      base2: [
+        "0.9rem",
+        {
+          lineHeight: "1.8rem",
+        },
+      ],
+      lg: [
+        "1.125rem",
+        {
+          lineHeight: "1.75rem",
+        },
+      ],
+      xl: [
+        "1.25rem",
+        {
+          lineHeight: "1.75rem",
+        },
+      ],
+      "2xl": [
+        "1.5rem",
+        {
+          lineHeight: "2rem",
+        },
+      ],
+      "3xl": [
+        "1.875rem",
+        {
+          lineHeight: "2.25rem",
+        },
+      ],
+      "4xl": [
+        "2.25rem",
+        {
+          lineHeight: "2.5rem",
+        },
+      ],
+      "5xl": [
+        "3rem",
+        {
+          lineHeight: "1",
+        },
+      ],
+      "6xl": [
+        "3.75rem",
+        {
+          lineHeight: "1",
+        },
+      ],
+      "7xl": [
+        "4.5rem",
+        {
+          lineHeight: "1",
+        },
+      ],
+      "8xl": [
+        "6rem",
+        {
+          lineHeight: "1",
+        },
+      ],
+      "9xl": [
+        "8rem",
+        {
+          lineHeight: "1",
+        },
+      ],
     },
     fontWeight: {
       thin: "100",
@@ -995,5 +1067,5 @@ module.exports = {
     "active",
     "disabled",
   ],
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
