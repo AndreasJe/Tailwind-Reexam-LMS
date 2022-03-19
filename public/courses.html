@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Overview</title>
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-
-
+    <script defer>
         $(function () {
             $("#sortable").sortable();
         });
@@ -21,22 +19,17 @@
 </head>
 
 <body class="font-Poppins overflow-hidden bg-bg-color">
-
     <nav class="bg-transparent z-50 sticky top-0 ">
         <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
-            <h1 class="m-3 grid content-center text-2xl font-bold">Courses</h1>
+            <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
             <div id="menuknap" class="m-3 grid content-center">
                 <img class="w-6 h-6 md:hidden" src="icons/burger.svg" alt="">
             </div>
         </div>
-        <aside
-            class="
-            duration-100 ease-in-out h-0
-            invisible md:visible rounded-b-lg 
-            md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2"
-            id="drawer">
-            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
 
+        <aside id="drawer"
+            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
+            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
                 <li
                     class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
                     <a href="index.html" class="flex flex-col md:flex-row">
@@ -79,7 +72,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="stats.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +84,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="notifications.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -115,20 +108,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
-                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Inbox</p>
-                    </a>
-                </li>
-                <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -148,7 +128,7 @@
     </nav>
 
     <main
-        class=" p-5 overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2  grid-flow-row max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+        class="scrollbar-hide p-5 overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2  grid-flow-row max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
 
         <section
             class="relative w-11/12  sm:w-full h-fit bg-white rounded-lg border-1  drop-shadow-lg  mx-auto  row-span-1 col-span-2">
@@ -191,12 +171,11 @@
             </div>
 
             <div class="h-8">
-                <a class="text-xs font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
-                    href="#">Visit
+                <a class="text-sm  font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                    href="profile.html">Visit
                     your
                     profile &#62;</a>
             </div>
-
 
         </section>
 
@@ -246,7 +225,7 @@
                             <path d="M2 2l7.586 7.586"></path>
                             <circle cx="11" cy="11" r="2"></circle>
                         </svg>
-                        <p class="w-11/12 sm:w-4/5 md:w-11/12 h-28 text-sm h-1/2">User Experience</p>
+                        <p class="text-sm h-1/2">User Experience</p>
                     </a>
                 </li>
             </ul>
@@ -292,13 +271,17 @@
                             <path d="M2 2l7.586 7.586"></path>
                             <circle cx="11" cy="11" r="2"></circle>
                         </svg>
-                        <p class="w-11/12 sm:w-4/5 md:w-11/12 h-28 text-sm h-1/2">User Experience</p>
+                        <p class="text-sm h-1/2">User Experience</p>
                     </a>
                 </div>
             </div>
 
             <div class=" px-3 m-5">
-                <button id="reorderActivate" class="underline text-sm text-right w-full"> Reorder</button>
+                <div class="h-8">
+                    <a id="reorderActivate"
+                        class="text-sm select-none cursor-pointer font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline">Reorder
+                        &#62;</a>
+                </div>
             </div>
         </section>
 
@@ -348,8 +331,9 @@
                     <p class="text-sm h-1/2">React Native</p>
                 </a>
             </div>
-            <div class=" px-3 m-5">
-                <button class="underline text-sm text-right w-full"> Enroll</button>
+            <div class="h-12">
+                <a class="text-sm  font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                    href="">See all &#62;</a>
             </div>
 
         </section>
@@ -409,7 +393,8 @@
 
 
 
-    <script src="script.js"></script>
+    <script defer src="components/burger.js"></script>
+    <script defer src="components/reorder.js"></script>
 </body>
 
 </html>

@@ -10,23 +10,18 @@
         rel="stylesheet">
 </head>
 
-<body class=" font-Poppins overflow-hidden bg-bg-color">
-
+<body class="h-screen w-screen font-Poppins overflow-hidden bg-bg-color">
     <nav class="bg-transparent z-50 sticky top-0 ">
         <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
-            <h1 class="m-3 grid content-center text-2xl font-bold">Profile</h1>
+            <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
             <div id="menuknap" class="m-3 grid content-center">
                 <img class="w-6 h-6 md:hidden" src="icons/burger.svg" alt="">
             </div>
         </div>
-        <aside
-            class="
-            duration-100 ease-in-out h-0
-            invisible md:visible rounded-b-lg 
-            md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2"
-            id="drawer">
-            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
 
+        <aside id="drawer"
+            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
+            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
                 <li
                     class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
                     <a href="index.html" class="flex flex-col md:flex-row">
@@ -69,7 +64,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="stats.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -81,7 +76,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="notifications.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -105,19 +100,6 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
-                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Inbox</p>
-                    </a>
-                </li>
-                <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -136,18 +118,43 @@
         </aside>
 
     </nav>
-
     <main
-        class=" max-w-7xl  scrollbar-hide p-5 overflow-scroll h-full flex-col min-h-screen  pt-6 flex pb-32 xl:flex-wrap lg:w-183 md:ml-125 lg:ml-115  xl:flex-row">
-
+        class=" max-w-7xl scrollbar-hide p-5 overflow-scroll h-full flex-col min-h-screen  pt-6 flex pb-32 xl:flex-wrap lg:w-183 md:ml-125 lg:ml-115  xl:flex-row">
         <section
-            class=" w-11/12  sm:w-full  max-w-2xl relative h-fit lg:mt-5  bg-white rounded-lg border-1  drop-shadow-lg ">
+            class=" w-11/12  sm:w-full  self-center sm:self-start   max-w-2xl relative h-fit lg:mt-5  bg-white rounded-lg border-1  drop-shadow-lg ">
             <div class="bg-white block rounded-lg ">
                 <h1 class="text-xl font-medium text-white absolute top-4 left-4  z-50">Your Profile:</h1>
                 <div class=" mx-auto">
                     <div class="w-full">
-                        <div class="relative w-full bg-blue-600 h-48 rounded-t-lg"></div>
-
+                        <div class="relative w-full bg-blue-600 h-48 rounded-t-lg">
+                            <div class="sm:flex flex-row absolute w-100 right-2 bottom-5 invisible md:visible md:flex">
+                                <a class="w-10 h-10 text-white m-2" href="www.facebook.com"><svg class="w-10 h-10"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                        width="50px" height="50px">
+                                        <path
+                                            d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z" />
+                                    </svg></a>
+                                <a class="w-10 h-10 text-white m-2" href="www.instgram.com">
+                                    <svg class="w-10 h-10" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 50 50" width="50px" height="50px">
+                                        <path
+                                            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+                                    </svg></a>
+                                <a class="w-10 h-10 text-white m-2" href="www.linkedin.com"><svg class="w-10 h-10"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                        width="50px" height="50px">
+                                        <path
+                                            d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z" />
+                                    </svg></a>
+                                <a class="w-10 h-10 text-white m-2" href="www.Twitter.com"><svg class="w-10 h-10"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                        <path
+                                            d="M16,3A13.0157,13.0157,0,0,0,3,16V34A13.0157,13.0157,0,0,0,16,47H34A13.0157,13.0157,0,0,0,47,34V16A13.0157,13.0157,0,0,0,34,3Zm0,2H34A10.9855,10.9855,0,0,1,45,16V34A10.9855,10.9855,0,0,1,34,45H16A10.9855,10.9855,0,0,1,5,34V16A10.9855,10.9855,0,0,1,16,5Z" />
+                                        <path
+                                            d="M30.5589,12.6229a6.5485,6.5485,0,0,0-6.542,6.5421,6.4313,6.4313,0,0,0,.0754.641,16.22,16.22,0,0,1-11.0856-5.8634.6067.6067,0,0,0-.5208-.2286.6.6,0,0,0-.4784.3041,6.4059,6.4059,0,0,0,.4336,7.1453c-.1556-.0684-.3252-.1061-.4713-.1885a.6028.6028,0,0,0-.8861.5278v.0755a6.5085,6.5085,0,0,0,2.8468,5.3354.4647.4647,0,0,1-.0566,0,.6024.6024,0,0,0-.6787.773,6.5555,6.5555,0,0,0,4.5248,4.28,11.3663,11.3663,0,0,1-7.1265,1.5271.6036.6036,0,0,0-.3959,1.1124,17.3992,17.3992,0,0,0,9.4265,2.7714,16.9443,16.9443,0,0,0,13.0087-5.7125,18.1558,18.1558,0,0,0,4.5059-11.8021c0-.172-.0142-.3393-.0189-.509a12.6347,12.6347,0,0,0,2.8657-2.9977.6035.6035,0,0,0-.7541-.8861c-.3111.1391-.674.1532-.9992.264a6.4025,6.4025,0,0,0,1.018-1.8853.6029.6029,0,0,0-.8861-.6976,11.3036,11.3036,0,0,1-3.3747,1.3009A6.4942,6.4942,0,0,0,30.5589,12.6229Zm0,1.2066a5.341,5.341,0,0,1,3.9026,1.6968.6073.6073,0,0,0,.5656.17,12.4285,12.4285,0,0,0,2.2624-.6787,5.37,5.37,0,0,1-1.546,1.414.6034.6034,0,0,0,.396,1.1311,12.4538,12.4538,0,0,0,1.7156-.4713,11.4586,11.4586,0,0,1-1.6968,1.5083.6013.6013,0,0,0-.2451.5279c.0095.245.0189.4878.0189.7352a16.973,16.973,0,0,1-4.2043,10.9914,15.6734,15.6734,0,0,1-12.1037,5.3166,16.133,16.133,0,0,1-6.73-1.4706,12.4891,12.4891,0,0,0,6.7871-2.5828.6036.6036,0,0,0-.3582-1.0747,5.284,5.284,0,0,1-4.5436-2.8279h.0942a6.5813,6.5813,0,0,0,1.7345-.2263.6032.6032,0,0,0-.0377-1.1689,5.2976,5.2976,0,0,1-4.1288-4.355,6.4044,6.4044,0,0,0,1.9041.3959.6033.6033,0,0,0,.3583-1.1124,5.3417,5.3417,0,0,1-2.3755-4.4493,5.2434,5.2434,0,0,1,.4147-1.923,17.4148,17.4148,0,0,0,12.01,5.75.611.611,0,0,0,.4949-.2121.6031.6031,0,0,0,.1272-.5232,5.3852,5.3852,0,0,1-.1508-1.2254A5.3245,5.3245,0,0,1,30.5589,13.83Z" />
+                                    </svg></a>
+                            </div>
+                        </div>
                         <div class="absolute -mt-20 ml-5">
                             <div>
                                 <img src="img/users/self.webp" alt="profile"
@@ -155,7 +162,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div
                         class="h-fit text-gray-800 bg-primary border border-primary rounded-b-lg p-5 pt-20 flex flex-col">
                         <div class="mb-1 h-5 w-38">
@@ -211,19 +217,47 @@
                                     the weekends about rules, how to survive, homesickness, etc. Then I got an email. I
                                     had a host family! Next thing I knew, I had a flight booked.</p>
                             </div>
+                            <div class="h-5 w-44 mb-5">
+                                <h4 class="text-base2">Social Media:</h4>
+                            </div>
+                            <div class=" justify-center flex-row flex md:hidden">
+                                <a class="w-10 h-10 text-dark-blue m-2" href="www.facebook.com"><svg class="w-10 h-10"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                        width="50px" height="50px">
+                                        <path
+                                            d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z" />
+                                    </svg></a>
+                                <a class="w-10 h-10 text-dark-blue m-2" href="www.instgram.com">
+                                    <svg class="w-10 h-10" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 50 50" width="50px" height="50px">
+                                        <path
+                                            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+                                    </svg></a>
+                                <a class="w-10 h-10 text-dark-blue m-2" href="www.linkedin.com"><svg class="w-10 h-10"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                        width="50px" height="50px">
+                                        <path
+                                            d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z" />
+                                    </svg></a>
+                                <a class="w-10 h-10 text-dark-blue m-2" href="www.Twitter.com"><svg class="w-10 h-10"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                        <path
+                                            d="M16,3A13.0157,13.0157,0,0,0,3,16V34A13.0157,13.0157,0,0,0,16,47H34A13.0157,13.0157,0,0,0,47,34V16A13.0157,13.0157,0,0,0,34,3Zm0,2H34A10.9855,10.9855,0,0,1,45,16V34A10.9855,10.9855,0,0,1,34,45H16A10.9855,10.9855,0,0,1,5,34V16A10.9855,10.9855,0,0,1,16,5Z" />
+                                        <path
+                                            d="M30.5589,12.6229a6.5485,6.5485,0,0,0-6.542,6.5421,6.4313,6.4313,0,0,0,.0754.641,16.22,16.22,0,0,1-11.0856-5.8634.6067.6067,0,0,0-.5208-.2286.6.6,0,0,0-.4784.3041,6.4059,6.4059,0,0,0,.4336,7.1453c-.1556-.0684-.3252-.1061-.4713-.1885a.6028.6028,0,0,0-.8861.5278v.0755a6.5085,6.5085,0,0,0,2.8468,5.3354.4647.4647,0,0,1-.0566,0,.6024.6024,0,0,0-.6787.773,6.5555,6.5555,0,0,0,4.5248,4.28,11.3663,11.3663,0,0,1-7.1265,1.5271.6036.6036,0,0,0-.3959,1.1124,17.3992,17.3992,0,0,0,9.4265,2.7714,16.9443,16.9443,0,0,0,13.0087-5.7125,18.1558,18.1558,0,0,0,4.5059-11.8021c0-.172-.0142-.3393-.0189-.509a12.6347,12.6347,0,0,0,2.8657-2.9977.6035.6035,0,0,0-.7541-.8861c-.3111.1391-.674.1532-.9992.264a6.4025,6.4025,0,0,0,1.018-1.8853.6029.6029,0,0,0-.8861-.6976,11.3036,11.3036,0,0,1-3.3747,1.3009A6.4942,6.4942,0,0,0,30.5589,12.6229Zm0,1.2066a5.341,5.341,0,0,1,3.9026,1.6968.6073.6073,0,0,0,.5656.17,12.4285,12.4285,0,0,0,2.2624-.6787,5.37,5.37,0,0,1-1.546,1.414.6034.6034,0,0,0,.396,1.1311,12.4538,12.4538,0,0,0,1.7156-.4713,11.4586,11.4586,0,0,1-1.6968,1.5083.6013.6013,0,0,0-.2451.5279c.0095.245.0189.4878.0189.7352a16.973,16.973,0,0,1-4.2043,10.9914,15.6734,15.6734,0,0,1-12.1037,5.3166,16.133,16.133,0,0,1-6.73-1.4706,12.4891,12.4891,0,0,0,6.7871-2.5828.6036.6036,0,0,0-.3582-1.0747,5.284,5.284,0,0,1-4.5436-2.8279h.0942a6.5813,6.5813,0,0,0,1.7345-.2263.6032.6032,0,0,0-.0377-1.1689,5.2976,5.2976,0,0,1-4.1288-4.355,6.4044,6.4044,0,0,0,1.9041.3959.6033.6033,0,0,0,.3583-1.1124,5.3417,5.3417,0,0,1-2.3755-4.4493,5.2434,5.2434,0,0,1,.4147-1.923,17.4148,17.4148,0,0,0,12.01,5.75.611.611,0,0,0,.4949-.2121.6031.6031,0,0,0,.1272-.5232,5.3852,5.3852,0,0,1-.1508-1.2254A5.3245,5.3245,0,0,1,30.5589,13.83Z" />
+                                    </svg></a>
+                            </div>
                         </div>
                         <div class="w-full text-right">
-                            <a href="edit_profile.html" class="hover:underline text-base font-semibold w-full ">Edit
+                            <a href="settings.html" class="hover:underline text-base font-semibold w-full ">Edit
                                 Profile &#62;</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
         <section
-            class="max-w-2xl relative h-fit p-5 xl:m-5 mt-5  w-11/12  sm:w-full   xl:max-w-xs   bg-white rounded-lg border-1 drop-shadow-lg  ">
+            class="max-w-2xl  self-center sm:self-start relative h-fit p-5 xl:m-5 mt-5  w-11/12  sm:w-full   xl:max-w-xs   bg-white rounded-lg border-1 drop-shadow-lg  ">
             <div class="flex flex-row justify-between  mb-2">
                 <h2 class="text-xl font-medium">Study group:</h2>
 
@@ -253,7 +287,7 @@
 
             <div class="flex justify-center flex-col md:flex-row xl:flex-col rounded-t-lg">
                 <div class="w-11/12 xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1 ">
-                    <img class="mx-auto object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                    <img class="mx-auto  object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
                         src="img/users/stud5.webp" alt="">
                     <h5 class="text-base text-center">Hannah, <em>Database</em> </h5>
                     <a class="text-sm font-semibold flex justify-end" href="#">Visit Profile &#62;
@@ -273,22 +307,13 @@
                     <a class="text-sm font-semibold flex justify-end" href="#">Visit Profile &#62;
                     </a>
                 </div>
-
-
             </div>
-
             <div class="h-10"></div>
-
         </section>
-
-
         <section
-            class="w-11/12 order-2 p-5 sm:w-full  xl:m-5 mt-5  max-w-2xl mb-5 xl:max-w-xs relative h-fit bg-white rounded-lg border-1 drop-shadow-lg">
-
-
+            class="w-11/12 order-2 p-5 sm:w-full  self-center sm:self-start  xl:m-5 mt-5  max-w-2xl mb-5 xl:max-w-xs relative h-fit bg-white rounded-lg border-1 drop-shadow-lg">
             <div class="flex flex-row justify-between  mb-2">
                 <h2 class="text-xl font-medium">Grades </h2>
-
                 <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
                     <path
@@ -299,7 +324,6 @@
                     </path>
                 </svg>
             </div>
-
             <div class="my-2">
                 <h4 class="font-semibold text-xs text-text-mute mt-2 border-b-1">1. Semester</h4>
                 <ul>
@@ -334,19 +358,14 @@
                     </li>
                 </ul>
             </div>
-
-
         </section>
-
         <section
-            class=" w-11/12 p-5 sm:w-full  xl:my-5 mt-5 max-w-2xl relative h-fit bg-white rounded-lg border-1 drop-shadow-lg ">
+            class=" w-11/12 p-5 sm:w-full  self-center sm:self-start xl:my-5 mt-5 max-w-2xl relative h-fit bg-white rounded-lg border-1 drop-shadow-lg ">
             <div class="flex flex-row justify-between  mb-20">
                 <h2 class="text-xl font-medium">Upcoming Assignments:</h2>
-
                 <svg class=" -mr-1 h-6 text-dark-blue" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" w="24px" h="24px" viewBox="0 0 1000 1000"
                     fill="currentColor" enable-background="new 0 0 1000 1000" xml:space="preserve">
-
                     <g>
                         <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
                             <path
@@ -387,12 +406,8 @@
                     <a class="text-sm font-semibold flex justify-end" href="#">Hand in &#62;
                     </a>
                 </div>
-
             </div>
-
-
             <div class="flex justify-center  flex-col sm:flex-row rounded-t-lg">
-
                 <div class="min-w-fit w-full p-5 h-fit mx-auto mb-5 pb-2 border-b-1 mt-1">
                     <h4
                         class="font-semibold text-base h-full w-full p-1 bg-dark-blue text-white rounded-md border-t-1  ">
@@ -418,13 +433,9 @@
                     <a class="text-sm font-semibold flex justify-end" href="#">Hand in &#62;
                     </a>
                 </div>
-
             </div>
-
         </section>
-
     </main>
-
     <footer
         class="grid grid-cols-5 gap-8 bg-dark-blue text-white w-screen fixed bottom-0 max-h-20 h-fit md:hidden px-4 border-t-6 border-light-blue">
         <a class="grid justify-items-center py-2" href="index.html">
@@ -450,7 +461,6 @@
                 <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
         </a>
-
         <a href="notifications.html" class="grid justify-items-center py-2">
             <span class="relative inline-block m-auto">
                 <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -464,8 +474,6 @@
                     class="animate-bounce absolute -top-3 -right-3 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-notif-color rounded-full drop-shadow-md border-2">13</span>
             </span>
         </a>
-
-
         <a href="profile.html" class="grid justify-items-center py-2">
             <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -474,8 +482,7 @@
             </svg>
         </a>
     </footer>
-
-    <script src="script.js"></script>
+    <script defer src="components/burger.js"></script>
 </body>
 
 </html>

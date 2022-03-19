@@ -11,7 +11,6 @@
 </head>
 
 <body class="font-Poppins overflow-hidden bg-bg-color">
-
     <nav class="bg-transparent z-50 sticky top-0 ">
         <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
             <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
@@ -19,13 +18,10 @@
                 <img class="w-6 h-6 md:hidden" src="icons/burger.svg" alt="">
             </div>
         </div>
-        <aside class="
-        duration-100 ease-in-out h-0
-        invisible md:visible rounded-b-lg 
-        md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6 text-white py-2"
-            id="drawer">
-            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
 
+        <aside id="drawer"
+            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
+            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
                 <li
                     class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
                     <a href="index.html" class="flex flex-col md:flex-row">
@@ -54,7 +50,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="schedule.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" class=" md:justify-items-start" xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -68,7 +64,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="stats.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -80,7 +76,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="notifications.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -92,7 +88,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="profile.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -104,20 +100,7 @@
                 </li>
                 <li
                     class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
-                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Inbox</p>
-                    </a>
-                </li>
-                <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
-                    <a href="#" class="flex flex-col md:flex-row">
+                    <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -135,16 +118,10 @@
         </aside>
 
     </nav>
-
     <main
-        class="p-5 overflow-scroll pb-28 h-full min-h-screen pt-11 lg:w-183 md:ml-125 gap-8 lg:ml-115 grid grid-cols-1 xl:grid-cols-2">
-
-
+        class=" scrollbar-hide p-5 overflow-scroll pb-28 h-full min-h-screen pt-11 lg:w-183 md:ml-125 gap-8 lg:ml-115">
         <section
-            class=" p-5 w-11/12  sm:w-full max-w-2xl relative h-fit mx-auto bg-white rounded-lg border-1 drop-shadow-lg ">
-
-
-
+            class=" p-5 w-11/12  sm:w-full max-w-6xl relative h-fit mx-auto lg:mx-5 bg-white rounded-lg border-1 drop-shadow-lg ">
             <div>
                 <div class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
@@ -162,29 +139,27 @@
                                         <div class="col-span-3 sm:col-span-2">
                                             <label for="company-website"
                                                 class="block text-sm font-medium text-gray-700"> Website </label>
-                                            <div class="mt-1 flex rounded-md shadow-sm">
+                                            <div class="mt-1 flex rounded-md  ">
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                                                    class="inline-flex items-center px-3 rounded-l-md   border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
                                                     http:// </span>
                                                 <input type="text" name="company-website" id="company-website"
-                                                    class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdbg-blue-100 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
                                                     placeholder="www.duedrengen.dk">
                                             </div>
                                         </div>
                                     </div>
-
                                     <div>
                                         <label for="about" class="block text-sm font-medium text-gray-700"> About
                                         </label>
                                         <div class="mt-1">
                                             <textarea id="about" name="about" rows="3"
-                                                class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                                                class="p-2   focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdmt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
                                                 placeholder="Tell a little about yourself"></textarea>
                                         </div>
                                         <p class="mt-2 text-sm text-gray-500">Brief description for your profile. URLs
                                             are hyperlinked.</p>
                                     </div>
-
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700"> Photo </label>
                                         <div class="mt-1 flex items-center">
@@ -197,27 +172,89 @@
                                                 </svg>
                                             </span>
                                             <button type="button"
-                                                class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Change</button>
+                                                class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md   text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Change</button>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                                    <button type="submit"
-                                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="md:grid md:grid-cols-3 md:gap-6">
+                    <div class="md:col-span-1">
+                        <div class="px-4 sm:px-0">
+                            <h3 class="text-lg font-medium leading-6 text-gray-900">Link Accounts</h3>
+                            <p class="mt-1 text-sm text-gray-600">Add links for your social media accounts, so you can
+                                expand your network</p>
+                        </div>
+                    </div>
+                    <div class="mt-5 md:mt-0 md:col-span-2">
+                        <form action="#" method="POST">
+                            <div class="shadow sm:rounded-md sm:overflow-hidden">
+                                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                                    <div class="grid grid-cols-3 gap-6">
+                                        <div class="col-span-3 sm:col-span-2">
+                                            <label for="company-website"
+                                                class="block text-sm font-medium text-gray-700"> LinkedIn </label>
+                                            <div class="mt-1 flex rounded-md  ">
+                                                <span
+                                                    class="inline-flex items-center px-3 rounded-l-md   border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    http:// </span>
+                                                <input type="text" name="company-website" id="company-website"
+                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    placeholder="www.linkedin.com/">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-6">
+                                        <div class="col-span-3 sm:col-span-2">
+                                            <label for="company-website"
+                                                class="block text-sm font-medium text-gray-700"> Instagram </label>
+                                            <div class="mt-1 flex rounded-md  ">
+                                                <span
+                                                    class="inline-flex items-center px-3 rounded-l-md   border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    http:// </span>
+                                                <input type="text" name="company-website" id="company-website"
+                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    placeholder="www.instagram.com/">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-6">
+                                        <div class="col-span-3 sm:col-span-2">
+                                            <label for="company-website"
+                                                class="block text-sm font-medium text-gray-700"> Facebook </label>
+                                            <div class="mt-1 flex rounded-md  ">
+                                                <span
+                                                    class="inline-flex items-center px-3 rounded-l-md   border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    http:// </span>
+                                                <input type="text" name="company-website" id="company-website"
+                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    placeholder="www.facebook.com/">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-6">
+                                        <div class="col-span-3 sm:col-span-2">
+                                            <label for="company-website"
+                                                class="block text-sm font-medium text-gray-700"> Twitter </label>
+                                            <div class="mt-1 flex rounded-md  ">
+                                                <span
+                                                    class="inline-flex items-center px-3 rounded-l-md   border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    http:// </span>
+                                                <input type="text" name="company-website" id="company-website"
+                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    placeholder="www.linkedin.com/">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section
-            class=" p-5 w-11/12  sm:w-full max-w-2xl relative h-fit mx-auto bg-white rounded-lg border-1 drop-shadow-lg ">
-
-
-
             <div class="mt-10 sm:mt-0">
                 <div class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
@@ -237,31 +274,27 @@
                                                 class="block text-sm font-medium text-gray-700">First name</label>
                                             <input type="text" name="first-name" id="first-name"
                                                 autocomplete="given-name"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
-
                                         <div class="col-span-6 sm:col-span-3">
                                             <label for="last-name" class="block text-sm font-medium text-gray-700">Last
                                                 name</label>
                                             <input type="text" name="last-name" id="last-name"
                                                 autocomplete="family-name"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
-
                                         <div class="col-span-6 sm:col-span-4">
                                             <label for="email-address"
                                                 class="block text-sm font-medium text-gray-700">Email address</label>
                                             <input type="text" name="email-address" id="email-address"
                                                 autocomplete="email"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
-
                                         <div class="col-span-6 sm:col-span-3">
                                             <label for="country"
                                                 class="block text-sm font-medium text-gray-700">Country</label>
                                             <select id="country" name="country" autocomplete="country-name"
-                                                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-
+                                                class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md   focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdsm:text-sm">
                                                 <option>Denmark</option>
                                                 <option>Iceland</option>
                                                 <option>Croatia</option>
@@ -276,21 +309,21 @@
                                                 class="block text-sm font-medium text-gray-700">Street address</label>
                                             <input type="text" name="street-address" id="street-address"
                                                 autocomplete="street-address"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                                             <label for="city"
                                                 class="block text-sm font-medium text-gray-700">City</label>
                                             <input type="text" name="city" id="city" autocomplete="address-level2"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                                             <label for="region" class="block text-sm font-medium text-gray-700">State /
                                                 Province</label>
                                             <input type="text" name="region" id="region" autocomplete="address-level1"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
@@ -298,13 +331,9 @@
                                                 / Postal code</label>
                                             <input type="text" name="postal-code" id="postal-code"
                                                 autocomplete="postal-code"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full   sm:text-sm border-gray-300 rounded-md">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                                    <button type="submit"
-                                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
                                 </div>
                             </div>
                         </form>
@@ -312,10 +341,6 @@
                 </div>
             </div>
 
-        </section>
-
-        <section
-            class=" p-5 w-11/12  sm:w-full max-w-2xl relative h-fit mx-auto bg-white rounded-lg border-1 drop-shadow-lg ">
             <div class="sm:mt-0">
                 <div class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
@@ -404,7 +429,7 @@
                                 </div>
                                 <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                     <button type="submit"
-                                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
+                                        class="inline-flex justify-center py-2 px-4 border border-transparent   text-sm font-medium rounded-md text-white bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Save</button>
                                 </div>
                             </div>
                         </form>
@@ -463,6 +488,7 @@
             </svg>
         </a>
     </footer>
+    <script defer src="components/burger.js"></script>
 </body>
 
 </html>
