@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
@@ -121,14 +121,17 @@
     </nav>
 
     <main
-        class="scrollbar-hide p-5 overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2  grid-flow-row max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+        class="scrollbar-hide p-5 overflow-scroll h-fit min-h-screen flex flex-col gap-8 pt-6 max-w-screen pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+
+
+
 
         <section
-            class="relative w-11/12  max-w-6xl sm:w-full h-fit bg-white rounded-lg border-1  drop-shadow-lg  mx-auto lg:m-5 row-span-1 col-span-2">
+            class="relative w-11/12  max-w-6xl sm:w-full h-fit bg-white rounded-lg border-1 xl:m-5 drop-shadow-lg  mx-auto mt-5 row-span-1 col-span-2">
 
             <div class=" w-full text-sm font-normal bg-white rounded-lg mx-auto pb-5 rounded-t-lg">
                 <div class="flex flex-row justify-between bg-dark-blue text-white m-0 rounded-t-lg">
-                    <h1 class="text-xl font-medium m-5">Today:</h1>
+                    <h1 class="text-xl font-medium m-5">Assigments: </h1>
                     <p class="text-xl font-medium m-5">23. March, 2022</p>
                 </div>
 
@@ -136,9 +139,9 @@
                     <li class="flex flex-row justify-between my-1 border-b-1">
                         <div class="flex flex-col w-full p-5">
                             <h4 class="font-semibold text-sm">
-                                Friday, 18th Jan - 09:50
+                                Friday, 18th Feb - Database
                             </h4>
-                            <p class="ml-4 w-full h-fit"> Todays UX lecture has been cancelled
+                            <p class="ml-4 w-full h-fit">
                             </p>
                         </div>
 
@@ -146,7 +149,7 @@
                             <div class="flex self-center">
                                 <a class="cursor-pointer text-base font-bold rounder-lg  ">
                                     <span class="bg-light-blue h-6 w-6 inline-flex items-center p-1.5 rounded-full  ">
-
+                                        <span class="bg-white h-3 w-3 m-auto rounded-lg"></span>
                                     </span>
                                 </a>
                             </div>
@@ -155,18 +158,18 @@
                     <li class="flex flex-row justify-between my-1 border-b-1">
                         <div class="flex flex-col w-full p-5">
                             <h4 class="font-semibold text-sm">
-                                Tuesday, 16th Jan - 09:50
+                                Tuesday, 16th Feb - 09:50
                             </h4>
                             <p class="ml-4 w-full h-fit"> Todays UX lecture has been cancelled
                             </p>
                         </div>
 
                         <div class="flex p-3 min-h-full rounded-md justify-center">
-                            <div class="flex self-center">
-                                <a class="cursor-pointer text-base font-bold rounder-lg">
+                            <div class="flex ">
+                                <a class="cursor-pointer text-base w-full h-full font-bold rounder-lg ">
 
-                                    <span class="bg-light-blue h-6 w-6 inline-flex items-center p-1.5 rounded-full  ">
-                                        </svg>
+                                    <span class="bg-light-blue mx-auto flex h-6 w-6 items-center rounded-full  ">
+                                        <span class="bg-white h-3 w-3 m-auto rounded-lg"></span>
                                     </span>
                                 </a>
                             </div>
@@ -175,7 +178,7 @@
                     <li class="flex flex-row justify-between my-1 border-b-1">
                         <div class="flex flex-col w-full p-5">
                             <h4 class="font-semibold text-sm">
-                                Thursday, 12nd Jan - 09:50
+                                Thursday, 12nd Feb - 09:50
                             </h4>
                             <p class="ml-4 w-full h-fit"> Todays Database lecture is gonna be online. I'm home with
                                 corona, so i'll see you on Teams :)
@@ -194,6 +197,7 @@
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                     </span>
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -201,7 +205,7 @@
                     <li class="flex flex-row justify-between my-1 border-b-1">
                         <div class="flex flex-col w-full p-5">
                             <h4 class="font-semibold text-sm">
-                                Tuesday, 9th Jan - 12:15
+                                Tuesday, 9th Feb - 12:15
                             </h4>
                             <p class="ml-4 w-full h-fit"> Feedback received<br>
                                 <span
@@ -229,7 +233,7 @@
                     <li class="flex flex-row justify-between my-1 border-b-1">
                         <div class="flex flex-col w-full p-5">
                             <h4 class="font-semibold text-sm">
-                                Wednesday, 2nd Jan - 08:26
+                                Wednesday, 2nd Feb - 08:26
                             </h4>
                             <p class="ml-4 w-full h-fit"> Prepare your presentation for next Web Development class
                             </p>
@@ -308,6 +312,37 @@
 
             </div>
 
+            <div class="flex flex-col items-center mb-10">
+
+                <span class="text-sm text-text-mute">
+                    Showing <span class="font-semibold text-text-mute">1</span> to <span
+                        class="font-semibold text-text-mute">10</span> of <span
+                        class="font-semibold text-text-mute">100</span> Entries
+                </span>
+                <div class="inline-flex mt-2 xs:mt-0">
+
+                    <button
+                        class="inline-flex items-center py-2 px-4 text-sm font-medium text-white bg-dark-blue rounded-l hover:bg-light-blue ">
+                        <svg class="mr-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        Prev
+                    </button>
+                    <button
+                        class="inline-flex items-center py-2 px-4 text-sm font-medium text-white bg-dark-blue rounded-r border-0 border-l border-white hover:bg-light-blue ">
+                        Next
+                        <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

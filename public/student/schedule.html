@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="../styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
     <!-- AlpineJS functionality will be commented out, as im am unsure if it's an allowed Framework. 
-            None the less, the template below provides the functionality required for this project, and i see no reason to reinvent the wheel.
-            Uncomment to see the functionality, and the styling i have done on the modal.
-        -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  None the less, the template below provides the functionality required for this project, and i see no reason to reinvent the wheel.
+  Uncomment to see the functionality, and the styling i have done on the modal.
+ -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
 
     <style>
         [x-cloak] {
@@ -26,7 +27,7 @@
         <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
             <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
             <div id="menuknap" class="m-3 grid content-center">
-                <img class="w-6 h-6 md:hidden" src="icons/burger.svg" alt="">
+                <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
             </div>
         </div>
 
@@ -42,7 +43,7 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2 ">
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">
                             Home
                         </p>
                     </a>
@@ -56,7 +57,7 @@
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
                     </a>
                 </li>
                 <li
@@ -70,7 +71,7 @@
                             <line x1="8" y1="2" x2="8" y2="6"></line>
                             <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
                     </a>
                 </li>
                 <li
@@ -82,7 +83,7 @@
                             <path d="M21.21 15.89A10 10 0 118 2.83"></path>
                             <path d="M22 12A10 10 0 0012 2v10z"></path>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Stats</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
                     </a>
                 </li>
                 <li
@@ -94,7 +95,7 @@
                             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
                     </a>
                 </li>
                 <li
@@ -106,7 +107,7 @@
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
                     </a>
                 </li>
                 <li
@@ -120,11 +121,21 @@
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
                     </a>
                 </li>
             </ul>
 
+            <ul class="grid mx-5 grid-flow-row md:grid-cols-none content-evenly mt-2 md:mt-5">
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="../landing_page.html" class="flex flex-col md:flex-row">
+                        <p class="mt-2  text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
+                            Landing Page
+                        </p>
+                    </a>
+            </ul>
+            </li>
 
         </aside>
 
@@ -134,7 +145,7 @@
         class=" md:p-5 scrollbar-hide overflow-scroll w-full h-full min-h-screen flex flex-col xl:flex-row-reverse max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
 
         <div class=" w-full xl:w-5/12">
-            <section class="w-11/12 m:w-full xl:w-11/12 relative m-auto h-fit  mt-4  border-1 xl:m-5 mb-5 lg:mb-12 ">
+            <section class="w-11/12 m:w-full xl:w-11/12 relative m-auto h-fit mt-4 border-1 xl:m-5 mb-5 lg:mb-12 ">
                 <div class=" w-full text-sm font-normal bg-white rounded-lg mx-auto pb-5 rounded-t-lg">
                     <div class="flex flex-row justify-between bg-dark-blue text-white m-0 rounded-t-lg">
                         <h1 class="text-xl font-medium m-5">Today:</h1>
@@ -163,7 +174,7 @@
                         </li>
                     </ul>
 
-                    <ul class="md:px-5  container w-11/12 mx-auto">
+                    <ul class="md:px-5 container w-11/12 mx-auto">
                         <li class="flex flex-row justify-between my-1 border-b-1">
                             <div class="flex flex-row">
                                 <span class="mt-2 w-2 h-2 rounded-full bg-purple-400">
@@ -188,7 +199,7 @@
 
             </section>
             <section
-                class="w-11/12 m:w-full xl:w-11/12 relative m-auto h-fit  mt-4 hidden xl:block  border-1 xl:m-5 mb-5 lg:mb-12 ">
+                class="w-11/12 m:w-full xl:w-11/12 relative m-auto h-fit mt-4 hidden xl:block border-1 xl:m-5 mb-5 lg:mb-12 ">
                 <div class=" w-full text-sm font-normal bg-white rounded-lg mx-auto pb-5 rounded-t-lg">
                     <div class="flex flex-row justify-between bg-dark-blue text-white m-0 rounded-t-lg">
                         <h1 class="text-xl font-medium m-5">Tomorrow:</h1>
@@ -217,7 +228,7 @@
                         </li>
                     </ul>
 
-                    <ul class="md:px-5  container w-11/12 mx-auto">
+                    <ul class="md:px-5 container w-11/12 mx-auto">
                         <li class="flex flex-row justify-between my-1 border-b-1">
                             <div class="flex flex-row">
                                 <span class="mt-2 w-2 h-2 rounded-full bg-green-400">
@@ -243,17 +254,17 @@
             </section>
         </div>
 
-        <section class="w-11/12  sm:w-full h-fit  relative bg-white rounded-lg border-1 mx-auto mb-12">
+        <section class="w-11/12 sm:w-full h-fit relative bg-white rounded-lg border-1 mx-auto mb-12">
 
             <!-- Component from TailwindComponents.com - URL: https://tailwindcomponents.com/component/calendar-ui-with-tailwindcss-and-alpinejs -->
 
-            <div class="antialiased sans-serif  bg-bg-color h-fit">
+            <div class="antialiased sans-serif block bg-bg-color h-fit">
                 <div x-data="app()" x-init="[initDate(), getNoOfDays()]" x-cloak>
-                    <div class="  w-full mx-auto p-1 md:py-4">
+                    <div class=" block w-full mx-auto p-1 md:py-4">
 
                         <!-- <div class="font-bold text-gray-800 text-xl mb-4">
-                            Schedule Tasks
-                        </div> -->
+    Schedule Tasks
+   </div> -->
 
                         <div class="bg-white rounded-lg shadow overflow-hidden">
 
@@ -312,21 +323,21 @@
                                             </div>
                                             <div style="height: 80px;" class="overflow-y-auto mt-1">
                                                 <!-- <div 
-                                                    class="absolute top-0 right-0 mt-2 mr-2 inline-flex items-center justify-center rounded-full text-sm w-6 h-6 bg-gray-700 text-white leading-none"
-                                                    x-show="events.filter(e => e.event_date === new Date(year, month, date).toDateString()).length"
-                                                    x-text="events.filter(e => e.event_date === new Date(year, month, date).toDateString()).length"></div> -->
+       class="absolute top-0 right-0 mt-2 mr-2 inline-flex items-center justify-center rounded-full text-sm w-6 h-6 bg-gray-700 text-white leading-none"
+       x-show="events.filter(e => e.event_date === new Date(year, month, date).toDateString()).length"
+       x-text="events.filter(e => e.event_date === new Date(year, month, date).toDateString()).length"></div> -->
 
                                                 <template
-                                                    x-for="event in events.filter(e => new Date(e.event_date).toDateString() ===  new Date(year, month, date).toDateString() )">
+                                                    x-for="event in events.filter(e => new Date(e.event_date).toDateString() === new Date(year, month, date).toDateString() )">
                                                     <div class="px-2 py-1 rounded-lg mt-1 overflow-hidden border"
                                                         :class="{
-                                                            'border-blue-200 text-blue-800 bg-blue-100': event.event_theme === 'blue',
-                                                            'border-red-200 text-red-800 bg-red-100': event.event_theme === 'red',
-                                                            'border-orange-200 text-orange-600 bg-orange-100': event.event_theme === 'orange',
-                                                            'border-yellow-200 text-yellow-800 bg-yellow-100': event.event_theme === 'yellow',
-                                                            'border-green-200 text-green-800 bg-green-100': event.event_theme === 'green',
-                                                            'border-purple-200 text-purple-800 bg-purple-100': event.event_theme === 'purple'
-                                                        }">
+        'border-blue-200 text-blue-800 bg-blue-100': event.event_theme === 'blue',
+        'border-red-200 text-red-800 bg-red-100': event.event_theme === 'red',
+        'border-orange-200 text-orange-600 bg-orange-100': event.event_theme === 'orange',
+        'border-yellow-200 text-yellow-800 bg-yellow-100': event.event_theme === 'yellow',
+        'border-green-200 text-green-800 bg-green-100': event.event_theme === 'green',
+        'border-purple-200 text-purple-800 bg-purple-100': event.event_theme === 'purple'
+       }">
                                                         <p x-text="event.event_title"
                                                             class="text-sm truncate leading-tight"></p>
                                                     </div>
@@ -352,7 +363,7 @@
                                 </svg>
                             </div>
 
-                            <div class="shadow w-full rounded-lg bg-white overflow-hidden w-full block p-8">
+                            <div class="shadow w-full rounded-lg bg-white overflow-hidden block p-8">
 
                                 <h2 class="font-bold text-2xl mb-6 text-gray-800 border-b pb-2">Add Event Details
                                 </h2>
@@ -466,7 +477,7 @@
             </svg>
         </a>
     </footer>
-    <script defer src="components/burger.js"></script>
+    <script defer src="../components/burger.js"></script>
     <script defer>
         const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

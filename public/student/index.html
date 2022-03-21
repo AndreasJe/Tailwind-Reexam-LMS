@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>I.KEA Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
@@ -15,7 +15,7 @@
         <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
             <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
             <div id="menuknap" class="m-3 grid content-center">
-                <img class="w-6 h-6 md:hidden" src="icons/burger.svg" alt="">
+                <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
             </div>
         </div>
 
@@ -31,7 +31,7 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2 ">
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">
                             Home
                         </p>
                     </a>
@@ -45,7 +45,7 @@
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
                     </a>
                 </li>
                 <li
@@ -59,7 +59,7 @@
                             <line x1="8" y1="2" x2="8" y2="6"></line>
                             <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
                     </a>
                 </li>
                 <li
@@ -71,7 +71,7 @@
                             <path d="M21.21 15.89A10 10 0 118 2.83"></path>
                             <path d="M22 12A10 10 0 0012 2v10z"></path>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Stats</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
                     </a>
                 </li>
                 <li
@@ -83,7 +83,7 @@
                             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
                     </a>
                 </li>
                 <li
@@ -95,7 +95,7 @@
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
                     </a>
                 </li>
                 <li
@@ -109,11 +109,21 @@
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
-                        <p class="mt-2 ml-1 text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
                     </a>
                 </li>
             </ul>
 
+            <ul class="grid mx-5 grid-flow-row md:grid-cols-none content-evenly mt-2 md:mt-5">
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="../landing_page.html" class="flex flex-col md:flex-row">
+                        <p class="mt-2  text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
+                            Landing Page
+                        </p>
+                    </a>
+            </ul>
+            </li>
 
         </aside>
 
@@ -121,11 +131,11 @@
     <main
         class="scrollbar-hide p-5 overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
         <section
-            class="relative w-11/12 h-full bg-white rounded-lg border-1  drop-shadow-lg  mx-auto sm:col-span-2 sm:row-span-1  sm:w-full">
+            class="relative w-11/12 h-full bg-white rounded-lg border-1 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1 sm:w-full">
             <div class="text-white rounded-t-lg pb-3 flex flex-row justify-start bg-light-blue p-5
-            ">
-                <img src="img/users/self.webp" alt="profile"
-                    class="rounded-full w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  ">
+  ">
+                <img src="../img/users/self.webp" alt="profile"
+                    class="rounded-full w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ">
                 <h2 class=" my-auto ml-3 text-xl font-bold">Good morning, Kate. <cite
                         class="text-sm font-medium"><br>Are
                         you ready
@@ -165,8 +175,8 @@
             </div>
         </section>
         <section
-            class="relative w-11/12  sm:w-full h-full bg-white rounded-lg p-5 border-1  drop-shadow-lg  mx-auto hidden xl:block ">
-            <div class="flex flex-row justify-between  mb-2">
+            class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto hidden xl:block ">
+            <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Stats </h2>
                 <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
@@ -208,7 +218,7 @@
             </div>
         </section>
         <section
-            class="relative w-11/12  sm:w-full h-full bg-white rounded-lg border-1 p-5  drop-shadow-lg  mx-auto  sm:col-span-2 sm:row-span-1">
+            class="relative w-11/12 sm:w-full h-full bg-white rounded-lg border-1 p-5 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Notifications </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -222,7 +232,7 @@
                     <h3 class="mt-6 font-semibold text-xs text-text-mute border-b-1 ">Today</h3>
                     <li class="py-1 text-sm flex flex-row">
                         <span class=" mt-2 w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-green-400"></span>
-                        <h3 class="font-semibold w-48  mr-2">Web Dev: </h3>
+                        <h3 class="font-semibold w-48 mr-2">Web Dev: </h3>
                         <p class="text-sm w-full text-right font-normal">
                             Class has been canceled today...
                         </p>
@@ -237,7 +247,7 @@
                     <li class="py-1 text-sm flex flex-row">
                         <span class=" mt-2 w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-orange-400"></span>
                         <h3 class="font-semibold w-48 mr-2">Database: </h3>
-                        <p class="text-sm w-full text-right  font-normal"> Relational Database Exercise to be handed in
+                        <p class="text-sm w-full text-right font-normal"> Relational Database Exercise to be handed in
                             at December
                             25...</p>
                     </li>
@@ -258,8 +268,8 @@
             </div>
         </section>
         <section
-            class="relative w-11/12  sm:w-full h-full bg-white rounded-lg p-5 border-1  drop-shadow-lg  mx-auto lg:block xl:hidden ">
-            <div class="flex flex-row justify-between  mb-2">
+            class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto lg:block xl:hidden ">
+            <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Stats </h2>
                 <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
@@ -298,7 +308,7 @@
                     all &#62;</a>
             </div>
         </section>
-        <section class="relative w-11/12  sm:w-full h-full bg-white rounded-lg p-5 border-1   drop-shadow-lg  mx-auto">
+        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Schedule </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -343,7 +353,7 @@
                     all &#62;</a>
             </div>
         </section>
-        <section class="relative w-11/12  sm:w-full h-full bg-white rounded-lg p-5 border-1  drop-shadow-lg  mx-auto">
+        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto">
             <div class="flex flex-row h-fit justify-between mb-2">
                 <h2 class="text-xl font-medium">My Courses </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -394,8 +404,8 @@
                     &#62;</a>
             </div>
         </section>
-        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1  drop-shadow-lg  mx-auto">
-            <div class="flex flex-row justify-between  mb-2">
+        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto">
+            <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Grades </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-mortarboard" viewBox="0 0 16 16">
@@ -498,7 +508,7 @@
         </nav>
     </footer>
 
-    <script defer src="components/burger.js"></script>
+    <script defer src="../components/burger.js"></script>
 </body>
 
 </html>
