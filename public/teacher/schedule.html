@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
-    <!-- AlpineJS functionality will be commented out, as im am unsure if it's an allowed Framework. 
-  None the less, the template below provides the functionality required for this project, and i see no reason to reinvent the wheel.
-  Uncomment to see the functionality, and the styling i have done on the modal.
- -->
     <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
 
 
@@ -336,6 +332,7 @@
         'border-orange-200 text-orange-600 bg-orange-100': event.event_theme === 'orange',
         'border-yellow-200 text-yellow-800 bg-yellow-100': event.event_theme === 'yellow',
         'border-green-200 text-green-800 bg-green-100': event.event_theme === 'green',
+        'border-gray-200 text-gray-800 bg-gray-100': event.event_theme === 'lightyellow',
         'border-purple-200 text-purple-800 bg-purple-100': event.event_theme === 'purple'
        }">
                                                         <p x-text="event.event_title"
@@ -403,6 +400,33 @@
                                                     d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                                             </svg>
                                         </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label id="listbox-label" class="block text-sm font-medium text-gray-700"> Assigned
+                                        to </label>
+                                    <div class="mt-1 relative">
+                                        <button type="button"
+                                            class="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                            aria-haspopup="listbox" aria-expanded="true"
+                                            aria-labelledby="listbox-label">
+                                            <span class="flex items-center">
+                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                    alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+                                                <span class="ml-3 block truncate"> Hans Henriksen </span>
+                                            </span>
+                                            <span
+                                                class="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                                                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                        </button>
+
                                     </div>
                                 </div>
 
@@ -493,7 +517,7 @@
                 events: [
                     {
                         event_date: new Date(2022, 2, 3),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'blue'
                     },
                     {
@@ -509,12 +533,12 @@
                     },
                     {
                         event_date: new Date(2022, 2, 23),
-                        event_title: "Presentation",
-                        event_theme: 'blue'
+                        event_title: "Staff Meeting",
+                        event_theme: 'lightyellow'
                     },
                     {
                         event_date: new Date(2022, 3, 6),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'blue'
                     },
                     {
@@ -530,8 +554,8 @@
                     },
                     {
                         event_date: new Date(2022, 3, 13),
-                        event_title: "Presentation",
-                        event_theme: 'blue'
+                        event_title: "Staff Meeting",
+                        event_theme: 'lightyellow'
                     },
 
                     {
@@ -552,7 +576,7 @@
                     },
                     {
                         event_date: new Date(2022, 3, 29),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'purple'
                     },
                     {
@@ -562,12 +586,12 @@
                     }, ,
                     {
                         event_date: new Date(2022, 4, 23),
-                        event_title: "Presentation",
-                        event_theme: 'blue'
+                        event_title: "Staff Meeting",
+                        event_theme: 'lightyellow'
                     },
                     {
                         event_date: new Date(2022, 4, 6),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'blue'
                     },
                     {
@@ -583,8 +607,8 @@
                     },
                     {
                         event_date: new Date(2022, 4, 13),
-                        event_title: "Presentation",
-                        event_theme: 'blue'
+                        event_title: "Staff Meeting",
+                        event_theme: 'lightyellow'
                     },
 
                     {
@@ -605,7 +629,7 @@
                     },
                     {
                         event_date: new Date(2022, 4, 31),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'purple'
                     },
                     {
@@ -620,7 +644,7 @@
                     },
                     {
                         event_date: new Date(2022, 5, 21),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'purple'
                     },
                     {
@@ -635,7 +659,7 @@
                     },
                     {
                         event_date: new Date(2022, 5, 10),
-                        event_title: "Assignment",
+                        event_title: "Lecture",
                         event_theme: 'purple'
                     },
                     {

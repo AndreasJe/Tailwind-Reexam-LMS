@@ -1,17 +1,8 @@
 {
-  "name": "tailwind-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "live-server": "^1.1.0",
-    "tailwind-scrollbar-hide": "^1.1.7",
+  "devDependencies": {
     "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
   }
 }

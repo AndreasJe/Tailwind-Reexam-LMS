@@ -1,0 +1,1220 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-Poppins overflow-hidden bg-bg-color">
+    <nav class="bg-transparent z-50 sticky top-0 ">
+        <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen">
+            <h1 class="m-3 grid content-center text-2xl font-bold">UX (F2022)</h1>
+            <div id="menuknap" class="m-3 grid content-center">
+                <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
+            </div>
+        </div>
+
+        <aside id="drawer"
+            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
+            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
+                <li
+                    class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
+                    <a href="index.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">
+                            Home
+                        </p>
+                    </a>
+                </li>
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="courses.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
+                    </a>
+                </li>
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="schedule.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" class=" md:justify-items-start" xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
+                    </a>
+                </li>
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="stats.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.21 15.89A10 10 0 118 2.83"></path>
+                            <path d="M22 12A10 10 0 0012 2v10z"></path>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
+                    </a>
+                </li>
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="notifications.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
+                    </a>
+                </li>
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="profile.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
+                    </a>
+                </li>
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="settings.html" class="flex flex-col md:flex-row">
+                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12.22 2h-.44a2 2 0 00-2 2v.18a2 2 0 01-1 1.73l-.43.25a2 2 0 01-2 0l-.15-.08a2 2 0 00-2.73.73l-.22.38a2 2 0 00.73 2.73l.15.1a2 2 0 011 1.72v.51a2 2 0 01-1 1.74l-.15.09a2 2 0 00-.73 2.73l.22.38a2 2 0 002.73.73l.15-.08a2 2 0 012 0l.43.25a2 2 0 011 1.73V20a2 2 0 002 2h.44a2 2 0 002-2v-.18a2 2 0 011-1.73l.43-.25a2 2 0 012 0l.15.08a2 2 0 002.73-.73l.22-.39a2 2 0 00-.73-2.73l-.15-.08a2 2 0 01-1-1.74v-.5a2 2 0 011-1.74l.15-.09a2 2 0 00.73-2.73l-.22-.38a2 2 0 00-2.73-.73l-.15.08a2 2 0 01-2 0l-.43-.25a2 2 0 01-1-1.73V4a2 2 0 00-2-2z">
+                            </path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="grid mx-5 grid-flow-row md:grid-cols-none content-evenly mt-2 md:mt-5">
+                <li
+                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    <a href="../landing_page.html" class="flex flex-col md:flex-row">
+                        <p class="mt-2  text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
+                            Landing Page
+                        </p>
+                    </a>
+            </ul>
+            </li>
+
+        </aside>
+
+    </nav>
+    <main
+        class="scrollbar-hide p-5 overflow-scroll h-fit min-h-screen flex flex-col gap-8 pt-6 max-w-screen pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+
+
+
+        <section
+            class="relative w-11/12 h-full bg-white rounded-lg border-1 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1 sm:w-full">
+
+            <div class="flex flex-row justify-between mb-2 p-5">
+                <h2 class="text-xl font-medium">Materials </h2> <svg class="text-dark-blue"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 1: Bacon
+                            Ipsum
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 2: Bacon
+                            Ipsum
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Book: Subjective
+                            Opinion based on old theory
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Web Design:
+                            Conventions and Navigation
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                Powerpoint
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Video Lesson:
+                            Different frameworks
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                Youtube
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Web Trends
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 4: Bacon
+                            Ipsum
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:px-10 my-10 mx-5">
+                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 5: Bacon
+                            Ipsum
+                        </h2>
+                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                UX (F2022)
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                English
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 49.1852" fill="currentColor">
+                                    <path class="b"
+                                        d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
+                                    <path class="b"
+                                        d="M23.2038,8.6725c-4.2225,.0109-8.4451,.0089-12.6677,.0027-.7822-.0012-1.5014,.1347-1.4822,1.095,.0178,.8875,.7091,.993,1.4359,.9893,2.1335-.0109,4.2671-.0039,6.4007-.0038,2.0891,0,4.1783-.0141,6.2671,.0074,.7727,.008,1.5236-.0578,1.5425-1.0144,.0188-.9504-.7111-1.0782-1.4963-1.0762Z" />
+                                    <path class="b"
+                                        d="M19.2083,27.8141c-2.8852,.0172-5.7706,.0183-8.6559,.0154-.7616-.0008-1.5237,.0622-1.4879,1.0543,.0358,.9948,.8442,.9741,1.5744,.9738,1.3761-.0006,2.7522-.0002,4.1282,.0002,1.4649,.0004,2.9298,.0031,4.3946-.0008,.699-.0018,1.4071-.0476,1.4088-.9925,.0016-.8941-.6094-1.0549-1.3622-1.0504Z" />
+                                    <path class="b"
+                                        d="M30.1469,16.2628c-.1407-.5402-.5961-.7154-1.1429-.7139-3.0707,.0082-6.1414,.0068-9.2121,.0024-.4772-.0007-.9179,.0873-1.0852,.5859-.1851,.5515-.1399,1.0629,.5146,1.3088,3.4113,.0297,6.8216,.2871,10.2342,.0492,.6511-.1749,.8417-.6557,.6914-1.2324Z" />
+                                    <path class="b"
+                                        d="M16.8954,38.7705c-2.2696-.0274-4.5398-.0286-6.8095-.0068-.5976,.0058-1.0294,.3313-1.0375,.9837-.0091,.7319,.4396,1.0084,1.1222,1.0059,1.1128-.0042,2.2256-.0011,3.3384-.0017,1.1128-.0006,2.2257,.0054,3.3385-.0029,.6255-.0047,1.0342-.3086,1.0436-.9552,.0092-.6346-.3811-1.0155-.9956-1.0229Z" />
+                                    <path class="b"
+                                        d="M29.2322,21.0068c-.3052-.049-.622-.0336-.9335-.0337-5.7474-.0013-11.4948-.0038-17.2421,.0059-.4329,.0007-.8946-.1273-1.2948,.166-1.033,.428-1.0069,.9978-.2237,1.6689,.354,.4018,.8311,.2475,1.2555,.2483,5.8369,.0102,11.6738,.0063,17.5107,.0044,.3118,0,.6277,.0153,.9345-.0277,.5414-.0758,.9077-.3793,.9396-.9507,.0361-.647-.3469-.9852-.9462-1.0814Z" />
+                                    <path class="b"
+                                        d="M12.6239,15.5476c-.8459,.0177-1.6925,.0045-2.5386,.0167-.5567,.008-.9361,.262-1.0262,.8399-.0898,.5764,.1938,.9889,.7146,1.1237,.5068,.1312,1.0528,.1113,1.5816,.1578l.0033-.066c.4452,0,.8929,.03,1.335-.0071,.6529-.0548,1.1496-.4169,1.123-1.0832-.0261-.6564-.4998-.9963-1.1928-.9817Z" />
+                                    <path class="b"
+                                        d="M29.2993,27.8499c-.48-.0584-.9727-.0122-1.4598-.0122v-.0058c-.4872,0-.978-.0372-1.4607,.0093-.6207,.0597-.9636,.4648-.9388,1.0734,.0228,.5588,.3969,.9029,.9517,.9193,.9728,.0287,1.9495,.0354,2.9204-.0209,.5445-.0315,.8877-.389,.8707-.9761-.0164-.5658-.3403-.9208-.8835-.9869Z" />
+                                    <path class="b"
+                                        d="M35.0938,1.8735c-10.3384-.0028-20.6769-.0025-31.0153-.0004-1.7266,.0003-1.9247,.1928-1.9262,1.914-.005,6.0571-.002,12.1142-.0019,18.1712,0,7.8831-.0014,15.7662,.0013,23.6493,.0007,1.8882,.1487,2.0322,2.0712,2.0292,2.4044-.0038,4.8088-.013,7.2132-.0211l-.002,.0065h9.1325l.0005,.0002c4.9017,.0051,9.8035,.0134,14.7052,.0132,1.5372,0,1.781-.2334,1.7816-1.7773,.0054-14.0291,.0052-28.0583,.0005-42.0874-.0006-1.6823-.231-1.897-1.9607-1.8975Zm-.783,43.1183c-.4306,.5339-1.0377,.4132-1.603,.4145-3.553,.0081-7.1061-.0028-10.659,.0089v-.0016l-8.0237-.0041c-.2637-.0527-.5766-.0228-.8707-.0004l-2.4869-.0013-.001,.001c-1.4739-.0036-2.948,.0057-4.4219,.0008-.5217-.0017-1.0915,.1105-1.4315-.4665-.1501-.4706-.1376-.9616-.1376-1.451-.0007-12.3716-.0039-24.7433,.0025-37.1149,.001-2.0426,.0818-2.1218,2.0841-2.1231,8.5494-.0057,17.0988-.0057,25.6483,0,2.0891,.0014,2.1486,.063,2.1493,2.1922,.0041,12.2381,.0036,24.4763-.0022,36.7144-.0003,.616,.0842,1.252-.2468,1.831Z" />
+                                </svg>
+                                PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                        <span class="hidden sm:block">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                Edit
+                            </button>
+                        </span>
+
+                        <span class="hidden sm:block ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                View
+                            </button>
+                        </span>
+
+                        <span class="sm:ml-3">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Publish
+                            </button>
+                        </span>
+
+                        <!-- Dropdown -->
+                        <span class="ml-3 relative sm:hidden">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                                More
+
+                                <svg class="-mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="origin-top-right absolute right-0 mt-2 -mr-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button"
+                                tabindex="-1">
+
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-0">Edit</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                    id="mobile-menu-item-1">View</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-8 px-10 m-2">
+                <p class="text-sm text-text-mute">*Information may be subject to change in the future.</p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <nav
+            class="grid grid-cols-5 gap-8 bg-light-blue text-white w-screen fixed bottom-0 max-h-20 h-fit md:hidden px-4 border-t-4 border-dark-blue">
+
+            <a class="grid justify-items-center py-2" href="index.html">
+                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <a href="courses.html" class="grid justify-items-center py-2">
+                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+            </a>
+            <a href="schedule.html" class="grid justify-items-center py-2">
+                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+            </a>
+
+            <a href="notifications.html" class="grid justify-items-center py-2">
+                <span class="relative inline-block m-auto">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+                    </svg> <span
+                        class="animate-bounce absolute -top-3 -right-3 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-notif-color rounded-full drop-shadow-md border-2">13</span>
+                </span>
+            </a>
+
+
+            <a href="profile.html" class="grid justify-items-center py-2">
+                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+    <script defer src="../components/burger.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <body class="font-Poppins overflow-hidden bg-bg-color">
     <nav class="bg-transparent z-50 sticky top-0 ">
-        <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
+        <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen">
             <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
             <div id="menuknap" class="m-3 grid content-center">
                 <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
@@ -131,115 +131,238 @@
     <main
         class="scrollbar-hide p-5 overflow-scroll h-fit min-h-screen flex flex-col gap-8 pt-6 max-w-screen pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
 
+
+
         <section
-            class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto lg:m-5 lg:mt-2 max-w-2xl ">
-            <div class="flex flex-row justify-between mb-2">
-                <h2 class="text-xl font-medium">Attendance </h2>
+            class="relative w-11/12 h-full bg-white rounded-lg border-1 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1 sm:w-full">
+            <div class="text-white rounded-t-lg pb-3 flex flex-row justify-start bg-light-blue p-5
+  ">
+                <img src="../img/users/adm3.webp" alt="profile"
+                    class="object-cover rounded-full w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ">
+                <h2 class=" my-auto ml-3 text-xl font-bold">Good morning, Hans! <cite
+                        class="text-sm font-medium"><br>Time to get updated on your students performance?</cite>
+                </h2>
             </div>
-            <div>
+            <div class="p-5 pb-0">
+                <ul class=" ">
+                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1">Optimal Performance:</h3>
+                    <li class="py-1 text-sm flex flex-row">
+                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-green-400"></span>
+                        Salsa Workshop (W2022): 90% are satisfied with this workshop.
+                    </li>
+                    <li class="py-1 text-sm flex flex-row">
+                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-green-400"></span>
+                        UX (F2021) - 100% of the students have handed in "Mandatory Assignment 1".
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0">
+                <ul class="mt-3 ">
+                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1">Critical Performance:</h3>
+                    <li class="py-1 text-sm flex flex-row">
+                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-red-400"></span>
+                        Salsa Workshop (W2022): 50% of your students doesnt show up reguraly.
+                    </li>
+                    <li class="py-1 text-sm flex flex-row">
+                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-red-400"></span>
+                        UX (F2021) - 20% of the students have handed in "Mandatory Assignment 2".
+                    </li>
+                </ul>
+            </div>
+            <div class="h-8">
+                <a class="text-sm md:text-xs font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                    href="profile.html">Visit
+                    your
+                    profile &#62;</a>
+            </div>
+        </section>
+
+        <div class="flex-col md:flex-row flex">
+            <section
+                class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto my-5 md:m-0 md:mr-2 max-w-2xl xl:mx-auto ">
+                <div class="flex flex-row justify-between mb-2">
+                    <h2 class="text-xl font-medium">Attendance </h2>
+                </div>
                 <div>
-                    <p class="text-xs mt-2 -mb-2">Database:</p>
-                    <div class="w-full bg-card-border my-2 rounded-full">
-                        <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                            style="width: 95%"> 95%</div>
+                    <div>
+                        <p class="text-xs mt-2 -mb-2">UX (S2022):</p>
+                        <div class="w-full bg-card-border my-2 rounded-full">
+                            <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                                style="width: 95%"> 95%</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <p class="text-xs mt-2 -mb-2">User Experience:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
-                    <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                        style="width: 92%">92%</div>
-                </div>
-            </div>
-            <div>
-                <p class="text-xs mt-2 -mb-2">Web development:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
-                    <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                        style="width: 86%"> 86%</div>
-                </div>
-            </div>
-
-            <div class="h-8">
-                <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
-                    href="#">See
-                    all &#62;</a>
-            </div>
-
-        </section>
-        <section
-            class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto lg:m-5 lg:my-0 max-w-2xl ">
-            <div class="flex flex-row justify-between mb-2">
-                <h2 class="text-xl font-medium">Assignments </h2>
-
-            </div>
-            <div>
                 <div>
-                    <p class="text-xs mt-2 -mb-2">Database:</p>
+                    <p class="text-xs mt-2 -mb-2"> UX (F2022):</p>
                     <div class="w-full bg-card-border my-2 rounded-full">
-                        <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                            style="width: 95%"> 95%</div>
+                        <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                            style="width: 92%">92%</div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <p class="text-xs mt-2 -mb-2">User Experience:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
-                    <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                        style="width: 85%"> 85%</div>
-                </div>
-            </div>
-            <div>
-                <p class="text-xs mt-2 -mb-2">Web development:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
-                    <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                        style="width: 55%"> 55%</div>
-                </div>
-            </div>
-
-
-            <div class="h-8">
-                <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
-                    href="#">See
-                    all &#62;</a>
-            </div>
-
-        </section>
-        <section
-            class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto lg:m-5 lg:my-0 max-w-2xl">
-            <div class="flex flex-row justify-between mb-2">
-                <h2 class="text-xl font-medium">Feedback </h2>
-            </div>
-            <div>
                 <div>
-                    <p class="text-xs mt-2 -mb-2">Database:</p>
+                    <p class="text-xs mt-2 -mb-2">Salsa 1on1 (W2022):</p>
                     <div class="w-full bg-card-border my-2 rounded-full">
-                        <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                        <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                            style="width: 86%"> 86%</div>
+                    </div>
+                </div>
+
+                <div class="h-8">
+                    <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                        href="#">See
+                        all &#62;</a>
+                </div>
+
+            </section>
+            <section
+                class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto   my-5 my-0 max-w-2xl xl:mx-auto lg:mx-3 ">
+                <div class="flex flex-row justify-between mb-2">
+                    <h2 class="text-xl font-medium">Assignments </h2>
+
+                </div>
+                <div>
+                    <div>
+                        <p class="text-xs mt-2 -mb-2">UX (S2022):</p>
+                        <div class="w-full bg-card-border my-2 rounded-full">
+                            <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                                style="width: 95%"> 95%</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs mt-2 -mb-2"> UX (F2022):</p>
+                    <div class="w-full bg-card-border my-2 rounded-full">
+                        <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                            style="width: 85%"> 85%</div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs mt-2 -mb-2">Salsa 1on1 (W2022):</p>
+                    <div class="w-full bg-card-border my-2 rounded-full">
+                        <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                             style="width: 55%"> 55%</div>
                     </div>
                 </div>
-            </div>
+
+
+                <div class="h-8">
+                    <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                        href="#">See
+                        all &#62;</a>
+                </div>
+
+            </section>
+            <section
+                class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto  md:ml-2 my-5 md:m-0 max-w-2xl xl:mx-auto hidden xxl:block ">
+                <div class="flex flex-row justify-between mb-2">
+                    <h2 class="text-xl font-medium">Feedback </h2>
+
+                </div>
+                <div>
+                    <div>
+                        <p class="text-xs mt-2 -mb-2">UX (S2022):</p>
+                        <div class="w-full bg-card-border my-2 rounded-full">
+                            <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                                style="width: 95%"> 95%</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs mt-2 -mb-2"> UX (F2022):</p>
+                    <div class="w-full bg-card-border my-2 rounded-full">
+                        <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                            style="width: 85%"> 85%</div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs mt-2 -mb-2">Salsa 1on1 (W2022):</p>
+                    <div class="w-full bg-card-border my-2 rounded-full">
+                        <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                            style="width: 55%"> 55%</div>
+                    </div>
+                </div>
+
+
+                <div class="h-8">
+                    <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                        href="#">See
+                        all &#62;</a>
+                </div>
+
+            </section>
+        </div>
+        <section
+            class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto w-max-w-2xl">
             <div>
-                <p class="text-xs mt-2 -mb-2">User Experience:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
-                    <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                        style="width: 95%"> 95%</div>
+                <h2 class="text-xl font-medium">Top Students</h2>
+            </div>
+            <div class="flex justify-center flex-col md:flex-row rounded-t-lg">
+                <div class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1 ">
+                    <img class="mx-auto object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud11.webp" alt="">
+                    <h5 class="text-base text-center">Kasper, <em>UX</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
+                <div class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1">
+                    <img class="mx-auto object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud10.webp" alt="">
+                    <h5 class="text-base text-center">Peter, <em>Database</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
+                <div class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1">
+                    <img class="mx-auto rounded-full object-cover h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud6.webp" alt="">
+                    <h5 class="text-base text-center">Hannah, <em>UX</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
+                <div
+                    class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 sm:hidden lg:block border-0 mt-1">
+                    <img class="mx-auto rounded-full object-cover h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud3.webp" alt="">
+                    <h5 class="text-base text-center">Klajdi, <em>Web Dev</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
                 </div>
             </div>
+        </section>
+        <section
+            class="relative w-11/12 h-fit sm:w-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto w-max-w-2xl">
             <div>
-                <p class="text-xs mt-2 -mb-2">Web development:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
-                    <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
-                        style="width: 45%"> 45%</div>
-                </div>
+                <h2 class="text-xl font-medium">Students who are behind</h2>
             </div>
-
-
-
-            <div class="h-8">
-                <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
-                    href="#">See
-                    all &#62;</a>
+            <div class="flex justify-center flex-col md:flex-row rounded-t-lg">
+                <div class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1 ">
+                    <img class="mx-auto object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud12.webp" alt="">
+                    <h5 class="text-base text-center">Kasper, <em>UX</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
+                <div class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1">
+                    <img class="mx-auto object-cover rounded-full h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud7.webp" alt="">
+                    <h5 class="text-base text-center">Jolies, <em>Salsa Workshop</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
+                <div class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 border-0 mt-1">
+                    <img class="mx-auto rounded-full object-cover h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud5.webp" alt="">
+                    <h5 class="text-base text-center">Hannah, <em>UX</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
+                <div
+                    class="w-full xs:w-1/2 min-w-fit p-5 h-fit mx-auto mb-5 pb-2 xl:border-b-1 sm:hidden lg:block border-0 mt-1">
+                    <img class="mx-auto rounded-full object-cover h-48 w-48 md:h-30 md:w-30 border-2 border-light-blue"
+                        src="../img/users/stud8.webp" alt="">
+                    <h5 class="text-base text-center">Solsikke, <em>Web Dev</em> </h5>
+                    <a class="text-sm font-semibold flex justify-end" href="#">View Statistics &gt;
+                    </a>
+                </div>
             </div>
         </section>
     </main>
