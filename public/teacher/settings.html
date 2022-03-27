@@ -10,20 +10,20 @@
         rel="stylesheet">
 </head>
 
-<body class="font-Poppins overflow-hidden bg-bg-color">
-    <nav class="bg-transparent z-50 sticky top-0 ">
-        <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
-            <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
-            <div id="menuknap" class="m-3 grid content-center">
+<body class="overflow-hidden font-Poppins bg-bg-color">
+    <nav class="sticky top-0 z-50 bg-transparent ">
+        <div id="topbar" class="flex flex-row justify-between w-screen text-white bg-light-blue h-14 ">
+            <h1 class="grid content-center m-3 text-2xl font-bold">Settings</h1>
+            <div id="menuknap" class="grid content-center m-3">
                 <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
             </div>
         </div>
 
         <aside id="drawer"
-            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
-            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
+            class="absolute invisible w-screen h-0 py-2 overflow-hidden text-white duration-100 ease-in-out rounded-b-lg md:visible md:rounded-b-none bg-dark-blue md:w-1/4 md:h-screen lg:w-1/6">
+            <ul class="grid grid-flow-row grid-cols-4 mx-5 md:grid-cols-none content-evenly">
                 <li
-                    class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
+                    class="flex flex-wrap justify-center py-2 align-baseline md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="index.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -31,13 +31,13 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2 ">
                             Home
                         </p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="courses.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -45,11 +45,11 @@
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="schedule.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" class=" md:justify-items-start" xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -59,11 +59,11 @@
                             <line x1="8" y1="2" x2="8" y2="6"></line>
                             <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="stats.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -71,11 +71,11 @@
                             <path d="M21.21 15.89A10 10 0 118 2.83"></path>
                             <path d="M22 12A10 10 0 0012 2v10z"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="notifications.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -83,11 +83,11 @@
                             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="profile.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -95,11 +95,11 @@
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -109,16 +109,16 @@
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
                     </a>
                 </li>
             </ul>
 
-            <ul class="grid mx-5 grid-flow-row md:grid-cols-none content-evenly mt-2 md:mt-5">
+            <ul class="grid grid-flow-row mx-5 mt-2 md:grid-cols-none content-evenly md:mt-5">
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="../landing_page.html" class="flex flex-col md:flex-row">
-                        <p class="mt-2  text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
+                        <p class="mt-2 text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
                             Landing Page
                         </p>
                     </a>
@@ -128,10 +128,9 @@
         </aside>
 
     </nav>
-    <main
-        class=" scrollbar-hide p-5 overflow-scroll pb-28 h-full min-h-screen pt-11 lg:w-183 md:ml-125 gap-8 lg:ml-115">
+    <main class="h-full min-h-screen gap-8 p-5 overflow-scroll scrollbar-hide pb-28 pt-11 lg:w-183 md:ml-125 lg:ml-115">
         <section
-            class=" p-5 w-11/12 sm:w-full max-w-6xl relative h-fit mx-auto lg:mx-5 bg-white rounded-lg border-1 drop-shadow-lg ">
+            class="relative w-11/12 max-w-6xl p-5 mx-auto bg-white rounded-lg sm:w-full h-fit lg:mx-5 border-1 drop-shadow-lg">
             <div>
                 <div class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
@@ -144,17 +143,17 @@
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         <form action="#" method="POST">
                             <div class="shadow sm:rounded-md sm:overflow-hidden">
-                                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                                <div class="px-4 py-5 space-y-6 bg-white sm:p-6">
                                     <div class="grid grid-cols-3 gap-6">
                                         <div class="col-span-3 sm:col-span-2">
                                             <label for="company-website"
                                                 class="block text-sm font-medium text-gray-700"> Website </label>
-                                            <div class="mt-1 flex rounded-md ">
+                                            <div class="flex mt-1 rounded-md ">
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    class="inline-flex items-center px-3 text-sm text-white border border-r-0 border-gray-300 rounded-l-md bg-light-blue">
                                                     http:// </span>
                                                 <input type="text" name="company-website" id="company-website"
-                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdbg-blue-100 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    class="flex-1 block w-full pl-1 bg-blue-100 border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-mdbg-blue-100 rounded-r-md sm:text-sm"
                                                     placeholder="www.duedrengen.dk">
                                             </div>
                                         </div>
@@ -164,7 +163,7 @@
                                         </label>
                                         <div class="mt-1">
                                             <textarea id="about" name="about" rows="3"
-                                                class="p-2 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdmt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                                                class="block w-full p-2 bg-blue-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdmt-1 sm:text-sm"
                                                 placeholder="Tell a little about yourself"></textarea>
                                         </div>
                                         <p class="mt-2 text-sm text-gray-500">Brief description for your profile. URLs
@@ -172,17 +171,34 @@
                                     </div>
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700"> Photo </label>
-                                        <div class="mt-1 flex items-center">
+                                        <div class="flex items-center mt-1">
                                             <span
-                                                class="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
-                                                <svg class="h-full w-full text-gray-300" fill="currentColor"
+                                                class="inline-block w-12 h-12 overflow-hidden bg-gray-100 rounded-full">
+                                                <svg class="w-full h-full text-gray-300" fill="currentColor"
                                                     viewBox="0 0 24 24">
                                                     <path
                                                         d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                                                 </svg>
                                             </span>
                                             <button type="button"
-                                                class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Change</button>
+                                                class="px-3 py-2 ml-5 text-sm font-medium leading-4 text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Change</button>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-6">
+                                        <div class="col-span-3 sm:col-span-2">
+                                            <label for="company-website"
+                                                class="block text-sm font-medium text-gray-700"> Reset Password </label>
+                                            <div class="flex flex-col mt-1 rounded-md ">
+                                                <p class="mt-1 mb-2 text-xs text-text-mute">You will receive a email
+                                                    with
+                                                    a
+                                                    link to reset your password.
+                                                    Press the button below.
+                                                </p>
+                                                <button type="button"
+                                                    class="px-3 py-2 ml-5 text-sm font-medium leading-4 text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue">Send
+                                                    Email</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -202,17 +218,17 @@
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         <form action="#" method="POST">
                             <div class="shadow sm:rounded-md sm:overflow-hidden">
-                                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                                <div class="px-4 py-5 space-y-6 bg-white sm:p-6">
                                     <div class="grid grid-cols-3 gap-6">
                                         <div class="col-span-3 sm:col-span-2">
                                             <label for="company-website"
                                                 class="block text-sm font-medium text-gray-700"> LinkedIn </label>
-                                            <div class="mt-1 flex rounded-md ">
+                                            <div class="flex mt-1 rounded-md ">
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    class="inline-flex items-center px-3 text-sm text-white border border-r-0 border-gray-300 rounded-l-md bg-light-blue">
                                                     http:// </span>
                                                 <input type="text" name="company-website" id="company-website"
-                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    class="block w-full pl-1 bg-blue-100 border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-mdflex-1 rounded-r-md sm:text-sm"
                                                     placeholder="www.linkedin.com/">
                                             </div>
                                         </div>
@@ -221,12 +237,12 @@
                                         <div class="col-span-3 sm:col-span-2">
                                             <label for="company-website"
                                                 class="block text-sm font-medium text-gray-700"> Instagram </label>
-                                            <div class="mt-1 flex rounded-md ">
+                                            <div class="flex mt-1 rounded-md ">
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    class="inline-flex items-center px-3 text-sm text-white border border-r-0 border-gray-300 rounded-l-md bg-light-blue">
                                                     http:// </span>
                                                 <input type="text" name="company-website" id="company-website"
-                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    class="block w-full pl-1 bg-blue-100 border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-mdflex-1 rounded-r-md sm:text-sm"
                                                     placeholder="www.instagram.com/">
                                             </div>
                                         </div>
@@ -235,12 +251,12 @@
                                         <div class="col-span-3 sm:col-span-2">
                                             <label for="company-website"
                                                 class="block text-sm font-medium text-gray-700"> Facebook </label>
-                                            <div class="mt-1 flex rounded-md ">
+                                            <div class="flex mt-1 rounded-md ">
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    class="inline-flex items-center px-3 text-sm text-white border border-r-0 border-gray-300 rounded-l-md bg-light-blue">
                                                     http:// </span>
                                                 <input type="text" name="company-website" id="company-website"
-                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    class="block w-full pl-1 bg-blue-100 border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-mdflex-1 rounded-r-md sm:text-sm"
                                                     placeholder="www.facebook.com/">
                                             </div>
                                         </div>
@@ -249,12 +265,12 @@
                                         <div class="col-span-3 sm:col-span-2">
                                             <label for="company-website"
                                                 class="block text-sm font-medium text-gray-700"> Twitter </label>
-                                            <div class="mt-1 flex rounded-md ">
+                                            <div class="flex mt-1 rounded-md ">
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-light-blue text-white text-sm">
+                                                    class="inline-flex items-center px-3 text-sm text-white border border-r-0 border-gray-300 rounded-l-md bg-light-blue">
                                                     http:// </span>
                                                 <input type="text" name="company-website" id="company-website"
-                                                    class="pl-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdflex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    class="block w-full pl-1 bg-blue-100 border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-mdflex-1 rounded-r-md sm:text-sm"
                                                     placeholder="www.linkedin.com/">
                                             </div>
                                         </div>
@@ -276,7 +292,7 @@
                     </div>
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         <form action="#" method="POST">
-                            <div class="shadow overflow-hidden sm:rounded-md">
+                            <div class="overflow-hidden shadow sm:rounded-md">
                                 <div class="px-4 py-5 bg-white sm:p-6">
                                     <div class="grid grid-cols-6 gap-6">
                                         <div class="col-span-6 sm:col-span-3">
@@ -284,27 +300,27 @@
                                                 class="block text-sm font-medium text-gray-700">First name</label>
                                             <input type="text" name="first-name" id="first-name"
                                                 autocomplete="given-name"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
                                         <div class="col-span-6 sm:col-span-3">
                                             <label for="last-name" class="block text-sm font-medium text-gray-700">Last
                                                 name</label>
                                             <input type="text" name="last-name" id="last-name"
                                                 autocomplete="family-name"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
                                         <div class="col-span-6 sm:col-span-4">
                                             <label for="email-address"
                                                 class="block text-sm font-medium text-gray-700">Email address</label>
                                             <input type="text" name="email-address" id="email-address"
                                                 autocomplete="email"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
                                         <div class="col-span-6 sm:col-span-3">
                                             <label for="country"
                                                 class="block text-sm font-medium text-gray-700">Country</label>
                                             <select id="country" name="country" autocomplete="country-name"
-                                                class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdsm:text-sm">
+                                                class="block w-full px-3 py-2 mt-1 bg-blue-100 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-mdsm:text-sm">
                                                 <option>Denmark</option>
                                                 <option>Iceland</option>
                                                 <option>Croatia</option>
@@ -319,21 +335,21 @@
                                                 class="block text-sm font-medium text-gray-700">Street address</label>
                                             <input type="text" name="street-address" id="street-address"
                                                 autocomplete="street-address"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                                             <label for="city"
                                                 class="block text-sm font-medium text-gray-700">City</label>
                                             <input type="text" name="city" id="city" autocomplete="address-level2"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                                             <label for="region" class="block text-sm font-medium text-gray-700">State /
                                                 Province</label>
                                             <input type="text" name="region" id="region" autocomplete="address-level1"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
@@ -341,7 +357,7 @@
                                                 / Postal code</label>
                                             <input type="text" name="postal-code" id="postal-code"
                                                 autocomplete="postal-code"
-                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 bg-blue-100 rounded-mdblock w-full sm:text-sm border-gray-300 rounded-md">
+                                                class="w-full mt-1 bg-blue-100 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 rounded-mdblock sm:text-sm">
                                         </div>
                                     </div>
                                 </div>
@@ -362,15 +378,15 @@
                     </div>
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         <form action="#" method="POST">
-                            <div class="shadow overflow-hidden sm:rounded-md">
-                                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                            <div class="overflow-hidden shadow sm:rounded-md">
+                                <div class="px-4 py-5 space-y-6 bg-white sm:p-6">
                                     <fieldset>
                                         <legend class="text-base font-medium text-gray-900">By Email</legend>
                                         <div class="mt-4 space-y-4">
                                             <div class="flex items-start">
                                                 <div class="flex items-center h-5">
                                                     <input id="comments" name="comments" type="checkbox"
-                                                        class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                                        class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                                                 </div>
                                                 <div class="ml-3 text-sm">
                                                     <label for="comments"
@@ -381,7 +397,7 @@
                                                 <div class="flex items-start">
                                                     <div class="flex items-center h-5">
                                                         <input id="candidates" name="candidates" type="checkbox"
-                                                            class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                                                     </div>
                                                     <div class="ml-3 text-sm">
                                                         <label for="candidates"
@@ -394,7 +410,7 @@
                                                 <div class="flex items-start">
                                                     <div class="flex items-center h-5">
                                                         <input id="offers" name="offers" type="checkbox"
-                                                            class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                                                     </div>
                                                     <div class="ml-3 text-sm">
                                                         <label for="offers"
@@ -415,32 +431,32 @@
                                         <div class="mt-4 space-y-4">
                                             <div class="flex items-center">
                                                 <input id="push-everything" name="push-notifications" type="radio"
-                                                    class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                                 <label for="push-everything"
-                                                    class="ml-3 block text-sm font-medium text-gray-700"> Everything
+                                                    class="block ml-3 text-sm font-medium text-gray-700"> Everything
                                                 </label>
                                             </div>
                                             <div class="flex items-center">
                                                 <input id="push-email" name="push-notifications" type="radio"
-                                                    class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                                 <label for="push-email"
-                                                    class="ml-3 block text-sm font-medium text-gray-700"> Only urgent
+                                                    class="block ml-3 text-sm font-medium text-gray-700"> Only urgent
                                                     information
                                                 </label>
                                             </div>
                                             <div class="flex items-center">
                                                 <input id="push-nothing" name="push-notifications" type="radio"
-                                                    class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                                 <label for="push-nothing"
-                                                    class="ml-3 block text-sm font-medium text-gray-700"> No push
+                                                    class="block ml-3 text-sm font-medium text-gray-700"> No push
                                                     notifications </label>
                                             </div>
                                         </div>
                                     </fieldset>
                                 </div>
-                                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                                <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                                     <button type="submit"
-                                        class="inline-flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Save</button>
+                                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Save</button>
                                 </div>
                             </div>
                         </form>
@@ -459,8 +475,8 @@
                     </div>
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         <form action="#" method="POST">
-                            <div class="shadow overflow-hidden sm:rounded-md">
-                                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                            <div class="overflow-hidden shadow sm:rounded-md">
+                                <div class="px-4 py-5 space-y-6 bg-white sm:p-6">
                                     <div>
                                         <legend class="text-base font-medium text-gray-900">Help Desk
                                         </legend>
@@ -470,17 +486,17 @@
                                     </div>
                                     <div>
                                         <legend class="text-base font-medium text-gray-900 ">Live Chat<span
-                                                class="bg-green-500 text-xs text-white px-3 py-1 rounded-lg m-auto h-fit ml-2 mb-2">OPEN</span>
+                                                class="px-3 py-1 m-auto mb-2 ml-2 text-xs text-white bg-green-500 rounded-lg h-fit">OPEN</span>
                                         </legend>
                                         <p class="text-sm text-gray-500">Open from Monday to Friday, 09:00 - 13:00</p>
 
                                     </div>
                                 </div>
-                                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                                <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                                     <a href="#"
-                                        class="inline-flex justify-center py-2 px-4 mr-5 border border-transparent text-sm font-medium rounded-md text-white bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Send
+                                        class="inline-flex justify-center px-4 py-2 mr-5 text-sm font-medium text-white border border-transparent rounded-md bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Send
                                         a ticket</a><a href="#"
-                                        class="inline-flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Open
+                                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-light-blue hover:bg-dark-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-dark-blue">Open
                                         Live Chat</a>
                                 </div>
                             </div>
@@ -492,23 +508,23 @@
 
     </main>
     <footer
-        class="grid grid-cols-5 gap-8 bg-dark-blue text-white w-screen fixed bottom-0 max-h-20 h-fit md:hidden px-4 border-t-6 border-light-blue">
-        <a class="grid justify-items-center py-2" href="index.html">
-            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        class="fixed bottom-0 grid w-screen grid-cols-5 gap-8 px-4 text-white bg-dark-blue max-h-20 h-fit md:hidden border-t-6 border-light-blue">
+        <a class="grid py-2 justify-items-center" href="index.html">
+            <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
         </a>
-        <a href="courses.html" class="grid justify-items-center py-2">
-            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        <a href="courses.html" class="grid py-2 justify-items-center">
+            <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
             </svg>
         </a>
-        <a href="schedule.html" class="grid justify-items-center py-2">
-            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        <a href="schedule.html" class="grid py-2 justify-items-center">
+            <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                 <line x1="16" y1="2" x2="16" y2="6"></line>
@@ -517,7 +533,7 @@
             </svg>
         </a>
 
-        <a href="notifications.html" class="grid justify-items-center py-2">
+        <a href="notifications.html" class="grid py-2 justify-items-center">
             <span class="relative inline-block m-auto">
                 <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -527,13 +543,13 @@
                 </svg>
 
                 <span
-                    class="animate-bounce absolute -top-3 -right-3 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-notif-color rounded-full drop-shadow-md border-2">13</span>
+                    class="absolute inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white border-2 rounded-full animate-bounce -top-3 -right-3 bg-notif-color drop-shadow-md">13</span>
             </span>
         </a>
 
 
-        <a href="profile.html" class="grid justify-items-center py-2">
-            <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        <a href="profile.html" class="grid py-2 justify-items-center">
+            <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>

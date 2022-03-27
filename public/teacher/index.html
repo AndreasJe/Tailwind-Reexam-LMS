@@ -10,20 +10,20 @@
         rel="stylesheet">
 </head>
 
-<body class="font-Poppins overflow-hidden bg-bg-color">
-    <nav class="bg-transparent z-50 sticky top-0 ">
-        <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen ">
-            <h1 class="m-3 grid content-center text-2xl font-bold">Home</h1>
-            <div id="menuknap" class="m-3 grid content-center">
+<body class="overflow-hidden font-Poppins bg-bg-color">
+    <nav class="sticky top-0 z-50 bg-transparent ">
+        <div id="topbar" class="flex flex-row justify-between w-screen text-white bg-light-blue h-14 ">
+            <h1 class="grid content-center m-3 text-2xl font-bold">Home</h1>
+            <div id="menuknap" class="grid content-center m-3">
                 <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
             </div>
         </div>
 
         <aside id="drawer"
-            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
-            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
+            class="absolute invisible w-screen h-0 py-2 overflow-hidden text-white duration-100 ease-in-out rounded-b-lg md:visible md:rounded-b-none bg-dark-blue md:w-1/4 md:h-screen lg:w-1/6">
+            <ul class="grid grid-flow-row grid-cols-4 mx-5 md:grid-cols-none content-evenly">
                 <li
-                    class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
+                    class="flex flex-wrap justify-center py-2 align-baseline md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="index.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -31,13 +31,13 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2 ">
                             Home
                         </p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="courses.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -45,11 +45,11 @@
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="schedule.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" class=" md:justify-items-start" xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -59,11 +59,11 @@
                             <line x1="8" y1="2" x2="8" y2="6"></line>
                             <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="stats.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -71,11 +71,11 @@
                             <path d="M21.21 15.89A10 10 0 118 2.83"></path>
                             <path d="M22 12A10 10 0 0012 2v10z"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="notifications.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -83,11 +83,11 @@
                             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="profile.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -95,11 +95,11 @@
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -109,16 +109,16 @@
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
                     </a>
                 </li>
             </ul>
 
-            <ul class="grid mx-5 grid-flow-row md:grid-cols-none content-evenly mt-2 md:mt-5">
+            <ul class="grid grid-flow-row mx-5 mt-2 md:grid-cols-none content-evenly md:mt-5">
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="../landing_page.html" class="flex flex-col md:flex-row">
-                        <p class="mt-2  text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
+                        <p class="mt-2 text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
                             Landing Page
                         </p>
                     </a>
@@ -129,14 +129,13 @@
 
     </nav>
     <main
-        class="scrollbar-hide p-5 overflow-scroll h-full min-h-screen grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row max-w-screen pt-6 pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+        class="grid h-full min-h-screen grid-flow-row grid-cols-1 gap-4 p-5 pt-6 pb-32 overflow-scroll scrollbar-hide md:grid-cols-2 xl:grid-cols-3 max-w-screen md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
         <section
-            class="relative w-11/12 h-full bg-white rounded-lg border-1 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1 sm:w-full">
-            <div class="text-white rounded-t-lg pb-3 flex flex-row justify-start bg-light-blue p-5
-  ">
+            class="relative w-11/12 h-full mx-auto bg-white rounded-lg border-1 drop-shadow-lg sm:col-span-2 sm:row-span-1 sm:w-full">
+            <div class="flex flex-row justify-start p-5 pb-3 text-white rounded-t-lg bg-light-blue ">
                 <img src="../img/users/adm3.webp" alt="profile"
-                    class="object-cover rounded-full w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ">
-                <h2 class=" my-auto ml-3 text-xl font-bold">Good morning, Hans. <cite
+                    class="object-cover w-20 h-20 rounded-full md:w-14 md:h-14 lg:w-20 lg:h-20 ">
+                <h2 class="my-auto ml-3 text-xl font-bold ">Good morning, Hans. <cite
                         class="text-sm font-medium"><br>Are
                         you ready
                         to take on
@@ -145,33 +144,33 @@
             </div>
             <div class="p-5">
                 <ul class="mt-3 ">
-                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1">Important:</h3>
-                    <li class="py-1 text-sm flex flex-row">
-                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-red-400"></span>
-                        <a href=""> UX (F2021) - Mandatory Assignment 2 - Provide feedback</a>
+                    <h3 class="mt-2 text-xs font-semibold text-text-mute border-b-1">Important:</h3>
+                    <li class="flex flex-row py-1 text-sm">
+                        <span class="w-2 h-2 mx-3 my-auto bg-red-400 rounded-full sm:w-1 sm:h-1"></span>
+                        <a href=""> UX (F2021) - Mandatory Assignment 2 <br class="sm:hidden"> - Provide feedback</a>
                     </li>
-                    <li class="py-1 text-sm flex flex-row">
-                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-red-400"></span>
-                        <a href="">UX (F2021) - Mandatory Assignment 1 - Provide feedback</a>
+                    <li class="flex flex-row py-1 text-sm">
+                        <span class="w-2 h-2 mx-3 my-auto bg-red-400 rounded-full sm:w-1 sm:h-1"></span>
+                        <a href="">UX (F2021) - Mandatory Assignment 1 <br class="sm:hidden"> - Provide feedback</a>
                     </li>
                 </ul>
                 <ul class="mt-3">
-                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1">Notices:</h3>
-                    <li class="py-1 text-sm flex flex-row">
-                        <span class="w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-yellow-400"></span>
+                    <h3 class="mt-2 text-xs font-semibold text-text-mute border-b-1">Notices:</h3>
+                    <li class="flex flex-row py-1 text-sm">
+                        <span class="w-2 h-2 mx-3 my-auto bg-yellow-400 rounded-full sm:w-1 sm:h-1"></span>
                         <a href="settings.html">Update your password</a>
                     </li>
                 </ul>
             </div>
             <div class="h-8">
-                <a class="text-sm md:text-xs font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                <a class="absolute text-sm italic font-thin md:text-xs text-text-mute bottom-5 right-5 hover:underline"
                     href="profile.html">Visit
                     your
                     profile &#62;</a>
             </div>
         </section>
         <section
-            class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto hidden xl:block ">
+            class="relative hidden w-11/12 h-full p-5 mx-auto bg-white rounded-lg sm:w-full border-1 drop-shadow-lg xl:block ">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">UX (F2021) </h2>
                 <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -181,26 +180,26 @@
                     <path d="M22 12A10 10 0 0012 2v10z"></path>
                 </svg>
             </div>
-            <h2 class="font-semibold text-sm text-text-mute mt-6 border-b-1">Assignments</h2>
+            <h2 class="mt-6 text-sm font-semibold text-text-mute border-b-1">Assignments</h2>
             <div>
                 <div>
-                    <p class="text-xs mt-2 -mb-2">Mandatory 3:</p>
-                    <div class="w-full bg-card-border my-2 rounded-full">
+                    <p class="mt-2 -mb-2 text-xs">Mandatory 3:</p>
+                    <div class="w-full my-2 rounded-full bg-card-border">
                         <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                             style="width: 95%"> 95%</div>
                     </div>
                 </div>
             </div>
             <div>
-                <p class="text-xs mt-2 -mb-2">Mandatory 2:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
+                <p class="mt-2 -mb-2 text-xs">Mandatory 2:</p>
+                <div class="w-full my-2 rounded-full bg-card-border">
                     <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                         style="width: 85%"> 85%</div>
                 </div>
             </div>
             <div>
-                <p class="text-xs mt-2 -mb-2">Mandatory 1:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
+                <p class="mt-2 -mb-2 text-xs">Mandatory 1:</p>
+                <div class="w-full my-2 rounded-full bg-card-border">
                     <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                         style="width: 55%"> 55%</div>
                 </div>
@@ -208,13 +207,13 @@
 
 
             <div class="h-8">
-                <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                <a class="absolute text-sm italic md:text-xsfont-thin text-text-mute bottom-5 right-5 hover:underline"
                     href="stats.html">See
                     all &#62;</a>
             </div>
         </section>
         <section
-            class="relative w-11/12 sm:w-full h-full bg-white rounded-lg border-1 p-5 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1">
+            class="relative w-11/12 h-full p-5 mx-auto bg-white rounded-lg sm:w-full border-1 drop-shadow-lg sm:col-span-2 sm:row-span-1">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Notifications </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -225,44 +224,44 @@
             </div>
             <div>
                 <ul>
-                    <h3 class="mt-6 font-semibold text-xs text-text-mute border-b-1 ">Today</h3>
-                    <li class="py-1 text-sm flex flex-row">
-                        <span class=" mt-2 w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-green-400"></span>
-                        <h3 class="font-semibold w-48 mr-2">Staff Meeting: </h3>
-                        <p class="text-sm w-full text-right font-normal">
+                    <h3 class="mt-6 text-xs font-semibold text-text-mute border-b-1 ">Today</h3>
+                    <li class="flex flex-row py-1 text-sm">
+                        <span class="w-2 h-2 mx-1 my-auto mt-2 bg-green-400 rounded-full sm:w-1 sm:h-1"></span>
+                        <h3 class="w-48 mr-2 font-semibold">Staff Meeting: </h3>
+                        <p class="w-full text-sm font-normal text-right">
                             Moved meeting to Room E34
                         </p>
                     </li>
-                    <li class="mb-4 text-sm flex flex-row">
-                        <span class=" mt-2 w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-purple-400"></span>
-                        <h3 class="font-semibold w-48 mr-2">Administration: </h3>
-                        <p class="text-sm w-full text-right font-normal"> "Kate Jackson" have a 75% failure to attend
+                    <li class="flex flex-row mb-4 text-sm">
+                        <span class="w-2 h-2 mx-1 my-auto mt-2 bg-purple-400 rounded-full sm:w-1 sm:h-1"></span>
+                        <h3 class="w-48 mr-2 font-semibold">Administration: </h3>
+                        <p class="w-full text-sm font-normal text-right"> "Kate Jackson" have a 75% failure to attend
                             rate </p>
                     </li>
-                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1 ">February 18</h3>
-                    <li class="py-1 text-sm flex flex-row">
-                        <span class=" mt-2 w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-orange-400"></span>
-                        <h3 class="font-semibold w-48 mr-2">UX (F2021): </h3>
-                        <p class="text-sm w-full text-right font-normal"> Mandotory 3 has not been configured </p>
+                    <h3 class="mt-2 text-xs font-semibold text-text-mute border-b-1 ">February 18</h3>
+                    <li class="flex flex-row py-1 text-sm">
+                        <span class="w-2 h-2 mx-1 my-auto mt-2 bg-orange-400 rounded-full sm:w-1 sm:h-1"></span>
+                        <h3 class="w-48 mr-2 font-semibold">UX (F2021): </h3>
+                        <p class="w-full text-sm font-normal text-right"> Mandotory 3 has not been configured </p>
                     </li>
-                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1 ">February 16</h3>
-                    <li class="py-1 mb-4 text-sm flex flex-row">
-                        <span class=" mt-2 w-2 h-2 sm:w-1 sm:h-1 my-auto mx-1 rounded-full bg-purple-400"></span>
-                        <h3 class="font-semibold w-48 mr-2">UX (F2021): </h3>
-                        <p class="text-sm w-full text-right font-normal"> 20 new students have signed up for your class
+                    <h3 class="mt-2 text-xs font-semibold text-text-mute border-b-1 ">February 16</h3>
+                    <li class="flex flex-row py-1 mb-4 text-sm">
+                        <span class="w-2 h-2 mx-1 my-auto mt-2 bg-purple-400 rounded-full sm:w-1 sm:h-1"></span>
+                        <h3 class="w-48 mr-2 font-semibold">UX (F2021): </h3>
+                        <p class="w-full text-sm font-normal text-right"> 20 new students have signed up for your class
                         </p>
                     </li>
                 </ul>
 
             </div>
             <div class="h-8">
-                <a class="text-xs font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                <a class="absolute text-xs italic font-thin text-text-mute bottom-5 right-5 hover:underline"
                     href="notifications.html">See
                     all &#62;</a>
             </div>
         </section>
         <section
-            class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto lg:block xl:hidden ">
+            class="relative w-11/12 h-full p-5 mx-auto bg-white rounded-lg sm:w-full border-1 drop-shadow-lg lg:block xl:hidden ">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">UX (F2021) </h2>
                 <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -272,26 +271,26 @@
                     <path d="M22 12A10 10 0 0012 2v10z"></path>
                 </svg>
             </div>
-            <h2 class="font-semibold text-sm text-text-mute mt-6 border-b-1">Assignments</h2>
+            <h2 class="mt-6 text-sm font-semibold text-text-mute border-b-1">Assignments</h2>
             <div>
                 <div>
-                    <p class="text-xs mt-2 -mb-2">Mandatory 3:</p>
-                    <div class="w-full bg-card-border my-2 rounded-full">
+                    <p class="mt-2 -mb-2 text-xs">Mandatory 3:</p>
+                    <div class="w-full my-2 rounded-full bg-card-border">
                         <div class="bg-accent-blue text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                             style="width: 95%"> 95%</div>
                     </div>
                 </div>
             </div>
             <div>
-                <p class="text-xs mt-2 -mb-2">Mandatory 2:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
+                <p class="mt-2 -mb-2 text-xs">Mandatory 2:</p>
+                <div class="w-full my-2 rounded-full bg-card-border">
                     <div class="bg-accent-yellow text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                         style="width: 85%"> 85%</div>
                 </div>
             </div>
             <div>
-                <p class="text-xs mt-2 -mb-2">Mandatory 1:</p>
-                <div class="w-full bg-card-border my-2 rounded-full">
+                <p class="mt-2 -mb-2 text-xs">Mandatory 1:</p>
+                <div class="w-full my-2 rounded-full bg-card-border">
                     <div class="bg-accent-red text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                         style="width: 55%"> 55%</div>
                 </div>
@@ -299,12 +298,12 @@
 
 
             <div class="h-8">
-                <a class="text-sm md:text-xsfont-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                <a class="absolute text-sm italic md:text-xsfont-thin text-text-mute bottom-5 right-5 hover:underline"
                     href="stats.html">See
                     all &#62;</a>
             </div>
         </section>
-        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto">
+        <section class="relative w-11/12 h-full p-5 mx-auto bg-white rounded-lg sm:w-full border-1 drop-shadow-lg">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Schedule </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -317,39 +316,39 @@
             </div>
             <ul>
                 <li class="mt-6">
-                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1">Today</h3>
+                    <h3 class="mt-2 text-xs font-semibold text-text-mute border-b-1">Today</h3>
                     <div class="flex flex-row justify-between">
                         <h4 class="text-sm font-normal">Staff Meeting - <span
                                 class="inline-block py-0.5 px-1.5 leading-none text-center whitespace-nowrap align-baseline tracking-wide h-fit bg-red-600 text-white rounded text-xs">ONLINE</span>
                         </h4>
-                        <p class="text-sm font-medium text-text-mute">10:45 - 13:35</p>
+                        <p class="text-sm font-medium text-text-mute w-fit">10:45 - 13:35</p>
                     </div>
                     <div class="flex flex-row justify-between">
                         <h4 class="text-sm font-normal">Workshop (A21) - B31
                         </h4>
-                        <p class="text-sm font-medium text-text-mute">13:45 - 16:35</p>
+                        <p class="text-sm font-medium text-text-mute w-fit">13:45 - 16:35</p>
                     </div>
                 </li>
                 <li class="mt-3">
-                    <h3 class="font-semibold text-xs text-text-mute mt-2 border-b-1">Tomorrow</h3>
+                    <h3 class="mt-2 text-xs font-semibold text-text-mute border-b-1">Tomorrow</h3>
                     <div class="flex flex-row justify-between">
                         <h4 class="text-sm font-normal">UX (F2021) - B22</h4>
-                        <p class="text-sm font-medium text-text-mute">10:45 - 13:35</p>
+                        <p class="text-sm font-medium text-text-mute w-fit">10:45 - 13:35</p>
                     </div>
                     <div class="flex flex-row justify-between">
                         <h4 class="text-sm font-normal">UX (A2021) - B22</h4>
-                        <p class="text-sm font-medium text-text-mute">13:45 - 16:35</p>
+                        <p class="text-sm font-medium text-text-mute w-fit">13:45 - 16:35</p>
                     </div>
                 </li>
             </ul>
             <div class="h-8">
-                <a class="text-xs font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                <a class="absolute text-xs italic font-thin text-text-mute bottom-5 right-5 hover:underline"
                     href="schedule.html">See
                     all &#62;</a>
             </div>
         </section>
-        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto">
-            <div class="flex flex-row h-fit justify-between mb-2">
+        <section class="relative w-11/12 h-full p-5 mx-auto bg-white rounded-lg sm:w-full border-1 drop-shadow-lg">
+            <div class="flex flex-row justify-between mb-2 h-fit">
                 <h2 class="text-xl font-medium">My Courses </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -357,9 +356,9 @@
                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                 </svg>
             </div>
-            <nav class="grid grid-cols-1 xl:grid-cols-2 mt-6 m-auto gap-3">
+            <nav class="grid grid-cols-1 gap-3 m-auto mt-6 xl:grid-cols-2">
                 <a href="course.html"
-                    class="text-white flex flex-col justify-between cursor-pointer bg-light-blue rounded-lg p-2 h-16 w-full md:h-20 hover:scale-102 hover:transition-all hover:duration-400">
+                    class="flex flex-col justify-between w-full h-16 p-2 text-white rounded-lg cursor-pointer bg-light-blue md:h-20 hover:scale-102 hover:transition-all hover:duration-400">
                     <svg class="self-end h-1/2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -369,7 +368,7 @@
                     <p class="text-sm h-1/2">Workshop (A21)</p>
                 </a>
                 <a href="course.html"
-                    class="text-white flex flex-col justify-between cursor-pointer bg-light-blue rounded-lg p-2 h-16 w-full md:h-20 hover:scale-102 hover:transition-all hover:duration-400">
+                    class="flex flex-col justify-between w-full h-16 p-2 text-white rounded-lg cursor-pointer bg-light-blue md:h-20 hover:scale-102 hover:transition-all hover:duration-400">
                     <svg class="self-end h-1/2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -381,7 +380,7 @@
                     <p class="text-sm h-1/2">UX (F2021)</p>
                 </a>
                 <a href="course.html"
-                    class="text-white flex flex-col justify-between cursor-pointer bg-light-blue rounded-lg p-2 h-16 w-full md:h-20 hover:scale-102 hover:transition-all hover:duration-400">
+                    class="flex flex-col justify-between w-full h-16 p-2 text-white rounded-lg cursor-pointer bg-light-blue md:h-20 hover:scale-102 hover:transition-all hover:duration-400">
                     <svg class="self-end h-1/2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -395,12 +394,12 @@
                 </a>
             </nav>
             <div class="h-8">
-                <a class="text-xs font-thin italic text-text-mute absolute bottom-5 right-5 hover:underline"
+                <a class="absolute text-xs italic font-thin text-text-mute bottom-5 right-5 hover:underline"
                     href="courses.html">Customize
                     &#62;</a>
             </div>
         </section>
-        <section class="relative w-11/12 sm:w-full h-full bg-white rounded-lg p-5 border-1 drop-shadow-lg mx-auto">
+        <section class="relative w-11/12 h-full p-5 mx-auto bg-white rounded-lg sm:w-full border-1 drop-shadow-lg">
             <div class="flex flex-row justify-between mb-2">
                 <h2 class="text-xl font-medium">Grades </h2> <svg class="text-dark-blue"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -414,36 +413,36 @@
                 </svg>
             </div>
             <div class="my-2">
-                <h4 class="font-semibold text-xs text-text-mute mt-2 border-b-1">1. Semester</h4>
+                <h4 class="mt-2 text-xs font-semibold text-text-mute border-b-1">1. Semester</h4>
                 <ul>
                     <li class="flex flex-row justify-between">
                         <p class="text-sm font-normal">Workshops</p>
-                        <p class="text-base font-semibold w-5 text-center">8.8</p>
+                        <p class="w-5 text-base font-semibold text-center">8.8</p>
                     </li>
                     <li class="flex flex-row justify-between">
                         <p class="text-sm font-normal">UX (F2021)</p>
-                        <p class="text-base font-semibold w-5 text-center">9.6</p>
+                        <p class="w-5 text-base font-semibold text-center">9.6</p>
                     </li>
                     <li class="flex flex-row justify-between">
                         <p class="text-sm font-normal">UX (A2021)</p>
-                        <p class="text-base font-semibold w-5 text-center">3.9</p>
+                        <p class="w-5 text-base font-semibold text-center">3.9</p>
                     </li>
                 </ul>
             </div>
             <div class="my-2">
-                <h4 class="font-semibold text-xs text-text-mute mt-2 border-b-1">2. Semester</h4>
+                <h4 class="mt-2 text-xs font-semibold text-text-mute border-b-1">2. Semester</h4>
                 <ul>
                     <li class="flex flex-row justify-between">
                         <p class="text-sm font-normal">Workshops</p>
-                        <p class="text-base font-semibold w-fit text-center">Pending</p>
+                        <p class="text-base font-semibold text-center w-fit">Pending</p>
                     </li>
                     <li class="flex flex-row justify-between">
                         <p class="text-sm font-normal">UX (F2021)</p>
-                        <p class="text-base font-semibold w-fit text-center">Pending</p>
+                        <p class="text-base font-semibold text-center w-fit">Pending</p>
                     </li>
                     <li class="flex flex-row justify-between">
                         <p class="text-sm font-normal">UX (A2021)</p>
-                        <p class="text-base font-semibold w-fit text-center">Pending</p>
+                        <p class="text-base font-semibold text-center w-fit">Pending</p>
                     </li>
                 </ul>
             </div>
@@ -451,26 +450,26 @@
     </main>
     <footer>
         <nav
-            class="grid grid-cols-5 gap-8 bg-light-blue text-white w-screen fixed bottom-0 max-h-20 h-fit md:hidden px-4 border-t-4 border-dark-blue">
+            class="fixed bottom-0 grid w-screen grid-cols-5 gap-8 px-4 text-white border-t-4 bg-light-blue max-h-20 h-fit md:hidden border-dark-blue">
 
-            <a class="grid justify-items-center py-2" href="index.html">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a class="grid py-2 justify-items-center" href="index.html">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                 </svg>
             </a>
-            <a href="courses.html" class="grid justify-items-center py-2">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a href="courses.html" class="grid py-2 justify-items-center">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                 </svg>
             </a>
-            <a href="schedule.html" class="grid justify-items-center py-2">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a href="schedule.html" class="grid py-2 justify-items-center">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -480,7 +479,7 @@
                 </svg>
             </a>
 
-            <a href="notifications.html" class="grid justify-items-center py-2">
+            <a href="notifications.html" class="grid py-2 justify-items-center">
                 <span class="relative inline-block m-auto">
                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -488,13 +487,13 @@
                         <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                         <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                     </svg> <span
-                        class="animate-bounce absolute -top-3 -right-3 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-notif-color rounded-full drop-shadow-md border-2">13</span>
+                        class="absolute inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white border-2 rounded-full animate-bounce -top-3 -right-3 bg-notif-color drop-shadow-md">13</span>
                 </span>
             </a>
 
 
-            <a href="profile.html" class="grid justify-items-center py-2">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a href="profile.html" class="grid py-2 justify-items-center">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>

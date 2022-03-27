@@ -10,20 +10,20 @@
         rel="stylesheet">
 </head>
 
-<body class="font-Poppins overflow-hidden bg-bg-color">
-    <nav class="bg-transparent z-50 sticky top-0 ">
-        <div id="topbar" class="bg-light-blue text-white h-14 flex justify-between flex-row w-screen">
-            <h1 class="m-3 grid content-center text-2xl font-bold">UX (F2022)</h1>
-            <div id="menuknap" class="m-3 grid content-center">
+<body class="overflow-y-scroll font-Poppins bg-bg-color">
+    <nav class="sticky top-0 z-50 bg-transparent ">
+        <div id="topbar" class="flex flex-row justify-between w-screen text-white bg-light-blue h-14">
+            <h1 class="grid content-center m-3 text-2xl font-bold">Course Materials</h1>
+            <div id="menuknap" class="grid content-center m-3">
                 <img class="w-6 h-6 md:hidden" src="../icons/burger.svg" alt="">
             </div>
         </div>
 
         <aside id="drawer"
-            class="duration-100 ease-in-out h-0 invisible md:visible rounded-b-lg md:rounded-b-none overflow-hidden bg-dark-blue w-screen absolute md:w-1/4 md:h-screen lg:w-1/6  text-white py-2">
-            <ul class="grid grid-cols-4 mx-5 grid-flow-row md:grid-cols-none content-evenly">
+            class="absolute invisible w-screen h-0 py-2 overflow-hidden text-white duration-100 ease-in-out rounded-b-lg md:visible md:rounded-b-none bg-dark-blue md:w-1/4 md:h-screen lg:w-1/6">
+            <ul class="grid grid-flow-row grid-cols-4 mx-5 md:grid-cols-none content-evenly">
                 <li
-                    class=" flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg align-baseline	">
+                    class="flex flex-wrap justify-center py-2 align-baseline md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="index.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -31,13 +31,13 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2 ">
                             Home
                         </p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="courses.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -45,11 +45,11 @@
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Courses</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="schedule.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" class=" md:justify-items-start" xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -59,11 +59,11 @@
                             <line x1="8" y1="2" x2="8" y2="6"></line>
                             <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2 ">Schedule</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="stats.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -71,11 +71,11 @@
                             <path d="M21.21 15.89A10 10 0 118 2.83"></path>
                             <path d="M22 12A10 10 0 0012 2v10z"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Statistics</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="notifications.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -83,11 +83,11 @@
                             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                             <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Notifications</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="profile.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -95,11 +95,11 @@
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Profile</p>
                     </a>
                 </li>
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="settings.html" class="flex flex-col md:flex-row">
                         <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -109,16 +109,16 @@
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
-                        <p class="mt-2  text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
+                        <p class="mt-2 text-xs md:text-sm md:font-medium md:ml-2">Settings</p>
                     </a>
                 </li>
             </ul>
 
-            <ul class="grid mx-5 grid-flow-row md:grid-cols-none content-evenly mt-2 md:mt-5">
+            <ul class="grid grid-flow-row mx-5 mt-2 md:grid-cols-none content-evenly md:mt-5">
                 <li
-                    class="flex flex-wrap justify-center md:justify-start py-2 hover:text-gray-200 hover:drop-shadow-lg">
+                    class="flex flex-wrap justify-center py-2 md:justify-start hover:text-gray-200 hover:drop-shadow-lg">
                     <a href="../landing_page.html" class="flex flex-col md:flex-row">
-                        <p class="mt-2  text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
+                        <p class="mt-2 text-xs md:text-sm md:font-bold md:ml-2 md:mt-20"> Back to
                             Landing Page
                         </p>
                     </a>
@@ -129,17 +129,18 @@
 
     </nav>
     <main
-        class="scrollbar-hide p-5 overflow-scroll h-fit min-h-screen flex flex-col gap-8 pt-6 max-w-screen pb-32 md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
+        class="flex flex-col min-h-screen gap-8 p-5 pt-6 pb-32 overflow-scroll scrollbar-hide h-fit max-w-screen md:w-175 lg:w-183 md:ml-125 lg:ml-115 ">
 
 
 
-        <section
-            class="relative w-11/12 h-full bg-white rounded-lg border-1 drop-shadow-lg mx-auto sm:col-span-2 sm:row-span-1 sm:w-full">
+        <section class="relative w-11/12 h-full mx-auto bg-white rounded-lg border-1 drop-shadow-lgsm:w-full">
 
-            <div class="flex flex-row justify-between mb-2 p-5">
-                <h2 class="text-xl font-medium">Materials </h2> <svg class="text-dark-blue"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+
+            <div class="flex flex-row justify-between m-8 mb-2 md:m-14">
+                <h2 class="text-xl font-medium">Materials </h2>
+                <svg class="text-dark-blue" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+                    stroke-linejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                     <line x1="16" y1="2" x2="16" y2="6"></line>
                     <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -147,14 +148,37 @@
                 </svg>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+
+            <div class="flex flex-row justify-between px-10 md:px-16 text-text-mute">
+                <div class="flex flex-row justify-end text-text-mute">
+                    <div class="flex flex-row justify-between w-40 pt-10 pb-0 ">
+                        <p class="align-middle cursor-pointer flex-end w-fit text-text-mute">Select</p>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-row justify-end text-text-mute">
+                    <div class="flex flex-row justify-center p-0 pt-10 m-0">
+                        <p class="align-middle cursor-pointer flex-end w-fit text-text-mute">Sort</p>
+                        <svg class="w-8 h-8 pb-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 1: Bacon
                             Ipsum
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -166,7 +190,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -176,9 +200,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -203,13 +227,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -221,9 +245,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -233,9 +257,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -243,14 +267,14 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 2: Bacon
                             Ipsum
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -262,7 +286,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -272,9 +296,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -299,13 +323,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -317,9 +341,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -329,9 +353,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -339,14 +363,14 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Book: Subjective
                             Opinion based on old theory
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -358,7 +382,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -368,9 +392,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -395,13 +419,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -413,9 +437,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -425,9 +449,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -435,14 +459,14 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Web Design:
                             Conventions and Navigation
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -454,7 +478,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -464,9 +488,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -491,13 +515,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -509,9 +533,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -521,9 +545,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -531,14 +555,14 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Video Lesson:
                             Different frameworks
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -550,7 +574,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -560,9 +584,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -587,13 +611,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -605,9 +629,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -617,9 +641,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -627,13 +651,13 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">Web Trends
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -645,7 +669,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -655,9 +679,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -682,13 +706,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -700,9 +724,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -712,9 +736,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -722,14 +746,14 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 4: Bacon
                             Ipsum
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -741,7 +765,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -751,9 +775,9 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -778,13 +802,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -796,9 +820,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -808,9 +832,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -818,14 +842,14 @@
                 </div>
             </div>
 
-            <div class="md:px-10 my-10 mx-5">
-                <div class="lg:flex lg:items-center lg:justify-between border-b-1 pb-5">
+            <div class="mx-5 my-10 md:px-10">
+                <div class="pb-5 lg:flex lg:items-center lg:justify-between border-b-1">
                     <div class="flex-1 min-w-0">
                         <h2 class="text-xl font-bold leading-7 text-gray-900 sm:text-lg sm:truncate">GDDR 5: Bacon
                             Ipsum
                         </h2>
-                        <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <div class="flex flex-col mt-1 sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -837,7 +861,7 @@
                                 </svg>
                                 UX (F2022)
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
                                 <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
@@ -847,8 +871,8 @@
                                 </svg>
                                 English
                             </div>
-                            <div class="mt-2 flex items-center text-sm text-gray-500">
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                            <div class="flex items-center mt-2 text-sm text-gray-500">
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 40 49.1852" fill="currentColor">
                                     <path class="b"
                                         d="M28.573,33.2566c-2.9402,.0028-5.8805,.0011-8.8207,.0013-3.0293,.0002-6.0586,.0018-9.0879-.0009-.7974-.0007-1.6398,.0305-1.6018,1.1046,.0345,.9758,.8376,.9916,1.5824,.9913,5.9695-.0026,11.939-.0015,17.9085-.0017,.7957,0,1.6417-.0493,1.6066-1.1102-.0323-.9738-.845-.9851-1.5871-.9844Z" />
@@ -873,13 +897,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+                    <div class="flex mt-5 lg:mt-0 lg:ml-4">
 
-                        <span class="hidden sm:block ml-3">
+                        <span class="hidden ml-3 sm:block">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="w-5 h-5 mr-2 -ml-1 text-gray-500" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
@@ -891,9 +915,9 @@
 
                         <span class="sm:ml-3">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -903,9 +927,9 @@
                         </span>
 
                         <!-- Dropdown -->
-                        <span class="ml-3 relative sm:hidden">
+                        <span class="relative ml-3 sm:hidden">
                             <button type="button"
-                                class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                                 View
                             </button>
@@ -921,26 +945,26 @@
     </main>
     <footer>
         <nav
-            class="grid grid-cols-5 gap-8 bg-light-blue text-white w-screen fixed bottom-0 max-h-20 h-fit md:hidden px-4 border-t-4 border-dark-blue">
+            class="fixed bottom-0 grid w-screen grid-cols-5 gap-8 px-4 text-white border-t-4 bg-light-blue max-h-20 h-fit md:hidden border-dark-blue">
 
-            <a class="grid justify-items-center py-2" href="index.html">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a class="grid py-2 justify-items-center" href="index.html">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                 </svg>
             </a>
-            <a href="courses.html" class="grid justify-items-center py-2">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a href="courses.html" class="grid py-2 justify-items-center">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                 </svg>
             </a>
-            <a href="schedule.html" class="grid justify-items-center py-2">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a href="schedule.html" class="grid py-2 justify-items-center">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -950,7 +974,7 @@
                 </svg>
             </a>
 
-            <a href="notifications.html" class="grid justify-items-center py-2">
+            <a href="notifications.html" class="grid py-2 justify-items-center">
                 <span class="relative inline-block m-auto">
                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -958,13 +982,13 @@
                         <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                         <path d="M13.73 21a2 2 0 01-3.46 0"></path>
                     </svg> <span
-                        class="animate-bounce absolute -top-3 -right-3 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-notif-color rounded-full drop-shadow-md border-2">13</span>
+                        class="absolute inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white border-2 rounded-full animate-bounce -top-3 -right-3 bg-notif-color drop-shadow-md">13</span>
                 </span>
             </a>
 
 
-            <a href="profile.html" class="grid justify-items-center py-2">
-                <svg class="m-auto w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <a href="profile.html" class="grid py-2 justify-items-center">
+                <svg class="w-6 h-6 m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
